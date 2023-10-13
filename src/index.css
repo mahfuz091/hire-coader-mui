@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-card-desig {
+  display: flex;
+  align-items: end;
+}
+
+
+.login-left {
+  padding-left: 30px;
+  padding-right: 30px;
+
+
+}
+
+#outlined-basic {
+  height: 56px;
+  width: 368px;
+}
+
+
+
+.Mui-focused {}
+
+.login-form {
+  width: 368px;
+}
+
+.signup-left {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media (min-width: 1200px) {
+  .login-left {
+    padding-left: 155px;
+    padding-right: 156px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .signup-left {
+    padding-left: 155px;
+    padding-right: 156px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+.login-title,
+.signup-title {
+  color: var(--Nutral-Black, #000);
+  font-family: Outfit;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  /* 36.4px */
+  margin-top: 50px;
+}
+
+.login-sub-title,
+.signup-sub-title {
+  color: var(--Nutral-Black, #000);
+  font-family: Outfit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  /* 23.4px */
+  margin-bottom: 32px;
+}
+
+/* form {
+  width: 70%;
+}
+
+@media (min-width: 768px) {
+  form {
+    width: 70%;
+  }
+} */
+
+.form-group:nth-child(1) {
+  margin-bottom: 32px;
+}
+
+.form-group:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.form-group:nth-child(3) {
+  margin-bottom: 12px;
+}
+
+.password {
+  position: relative;
+}
+
+.form-group:nth-child(4) {
+  margin-bottom: 12px;
+}
+
+.form-group:nth-child(1) label {
+  margin-left: 10px;
+  color: var(--Nutral-Black, #000);
+  opacity: 0.5;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  /* 28.8px */
+}
+
+.form-group:nth-child(1) input[type="radio"]:checked+label {
+  color: var(--Nutral-Black, #000);
+  opacity: 1;
+}
+
+#coder {
+  margin-left: 24px;
+  accent-color: #14a800;
+  width: 16px;
+  height: 16px;
+}
+
+#client {
+  accent-color: #14a800;
+  width: 16px;
+  height: 16px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="number"] {
+  padding: 11px 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background: #fcfcfc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.thm-btn {
+  position: absolute;
+  top: 42px;
+  right: 20px;
+  border: none;
+  background: none;
+}
+
+.forgot-password {
+  color: var(--Nutral-Black, #000);
+  text-align: right;
+  /* 14px text */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  /* 22.4px */
+  float: right;
+}
+
+.email-label,
+.password-label {
+  color: var(--Nutral-Black, #000);
+  /* field uper text */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+::placeholder {
+  color: var(--Nutral-Black, #000);
+
+  /* 14px text */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  /* 22.4px */
+  opacity: 0.3;
+}
+
+.login-btn {
+  padding: 12px 32px;
+  border: none;
+  border-radius: 4px;
+  background: var(--Primary-color, #14a800);
+  color: var(--Nutral-White, #fff);
+  /* button text */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  /* 25.6px */
+  margin-top: 40px;
+  width: 100%;
+}
+
+.account {
+  text-align: center;
+  margin-top: 16px;
+  color: var(--Nutral-Black, #000);
+
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  /* 22.4px */
+}
+
+.account a {
+  color: var(--Primary-color, #14a800);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+}
+
+.login-img {
+  /* height: 100vh; */
+  height: 50vh;
+  width: 100%;
+  background-image: url(./assets/Images/-2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1024px) {
+  .login-img {
+    height: 100vh;
+    width: 100%;
+  }
+}
+
+.login-card {
+  width: 300px;
+  height: 147px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  background: var(--Nutral-White, #fff);
+  box-shadow: 1px 10px 30px 4px rgba(0, 0, 0, 0.09);
+  padding: 24px 32px;
+  position: absolute;
+  top: 202px;
+  left: 32px;
+  z-index: 12;
+}
+
+.login-car-title {
+  color: var(--Nutral-Black, #000);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 8px;
+
+  /* 21.6px */
+}
+
+.login-card-desig {
+  color: var(--Nutral-Black, #000);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 21px */
+  margin-bottom: 23.65px;
+}
+
+.login-card-desig svg {
+  margin-right: 12px;
+}
+
+.previous {
+  color: var(--Nutral-Black, #000);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 18px */
+  opacity: 0.6;
+}
+
+.login-card-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.login-card-circle svg {
+  border-top-right-radius: 14px;
+}
+
+.gap {
+  gap: 20px !important;
+}
+
+select {
+  appearance: none;
+  padding: 11px 20px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: #fcfcfc !important;
+  width: 100%;
+  background-position: calc(100% - 20px) !important;
+  background: url(/assets/images/Down.svg) no-repeat;
+  color: rgba(0, 0, 0, 0.5);
+
+  /* 14px text */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  /* 22.4px */
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select option {
+  background-color: #fcfcfc;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.selected {
+  display: none;
+}
