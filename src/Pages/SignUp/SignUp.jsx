@@ -18,6 +18,7 @@ import { Link } from "react-router-dom";
 
 const SignUp = () => {
   const [visible, setVisible] = useState(1);
+
   return (
     <div className='signup'>
       <Grid container>

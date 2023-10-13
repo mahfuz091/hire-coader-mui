@@ -3,7 +3,15 @@
 import React from "react";
 import logo from "../../assets/Images/logo.png";
 import loginCardLogo from "../../assets/Images/login-card-logo.png";
-import { Grid, TextField } from "@mui/material";
+import {
+  Button,
+  FormControl,
+  FormControlLabel,
+  Grid,
+  Radio,
+  RadioGroup,
+  TextField,
+} from "@mui/material";
 import { Link } from "react-router-dom";
 
 const Login = () => {
@@ -16,20 +24,25 @@ const Login = () => {
           <p className='login-sub-title'>Log in as</p>
           <form className='login-form' action=''>
             <div className='form-group'>
-              <input
-                type='radio'
-                name='client-coder'
-                id='client'
-                value='Client'
-              />
-              <label htmlFor='client'>Client</label>
-              <input
-                type='radio'
-                name='client-coder'
-                id='coder'
-                value='Coder'
-              />
-              <label htmlFor='coder'>Coder</label>
+              <FormControl>
+                <RadioGroup
+                  row
+                  aria-labelledby='demo-row-radio-buttons-group-label'
+                  name='row-radio-buttons-group'
+                  defaultValue='coder'
+                >
+                  <FormControlLabel
+                    value='Client'
+                    control={<Radio />}
+                    label='Client'
+                  />
+                  <FormControlLabel
+                    value='coder'
+                    control={<Radio />}
+                    label='Coder'
+                  />
+                </RadioGroup>
+              </FormControl>
             </div>
             <div className='form-group'>
               <TextField
@@ -80,7 +93,9 @@ const Login = () => {
               Forgot Password
             </a>
 
-            <input className='login-btn' type='submit' value='Log In' />
+            <Button fullWidth variant='contained'>
+              Log in
+            </Button>
             <p className='account'>
               Don’t have an account? <Link to='/signup'>Sign Up</Link>
             </p>

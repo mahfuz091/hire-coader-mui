@@ -177,11 +177,6 @@ label {
   /* 28.8px */
 }
 
-.form-group:nth-child(1) input[type="radio"]:checked + label {
-  color: var(--Nutral-Black, #000);
-  opacity: 1;
-}
-
 #coder {
   margin-left: 24px;
   accent-color: #14a800;
@@ -255,11 +250,11 @@ input[type="number"] {
   opacity: 0.3;
 }
 
-.login-btn {
-  padding: 12px 32px;
+.css-1fu7jd5-MuiButtonBase-root-MuiButton-root {
+  padding: 12px 32px !important;
   border: none;
   border-radius: 4px;
-  background: var(--Primary-color, #14a800);
+  background: var(--Primary-color, #14a800) !important;
   color: var(--Nutral-White, #fff);
   /* button text */
   font-family: Inter;
@@ -483,6 +478,9 @@ select option {
   background: var(--fields-color-fields-stoke, #ddd) !important;
 }
 
-.css-1u3bzj6-MuiFormControl-root-MuiTextField-root:focus {
-  border-color: red;
+.css-vqmohf-MuiButtonBase-root-MuiRadio-root.Mui-checked {
+  color: #14a800 !important;
+}
+.css-1nrlq1o-MuiFormControl-root {
+  margin-left: -25px !important;
 }
