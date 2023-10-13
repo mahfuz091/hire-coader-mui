@@ -167,7 +167,7 @@ label {
 .form-group:nth-child(1) label {
   margin-left: 10px;
   color: var(--Nutral-Black, #000);
-  opacity: 0.5;
+  opacity: 1;
   text-align: center;
   font-family: Inter;
   font-size: 18px;
@@ -253,7 +253,8 @@ input[type="number"] {
   margin-bottom: 0 !important;
 }
 
-.css-1fu7jd5-MuiButtonBase-root-MuiButton-root {
+.css-1fu7jd5-MuiButtonBase-root-MuiButton-root,
+.css-1qelgoy {
   margin-top: 40px !important;
   padding: 12px 32px !important;
   border: none;
@@ -464,6 +465,7 @@ select option {
 .css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
   color: var(--text-color-text-70, #4d4d4d) !important;
   text-align: center;
+  text-transform: none !important;
 
   /* Button text/Extra Small */
   font-family: Inter;
@@ -482,9 +484,11 @@ select option {
   background: var(--fields-color-fields-stoke, #ddd) !important;
 }
 
-.css-vqmohf-MuiButtonBase-root-MuiRadio-root.Mui-checked {
+.css-vqmohf-MuiButtonBase-root-MuiRadio-root.Mui-checked,
+.css-1a5icme.Mui-checked {
   color: #14a800 !important;
 }
-.css-1nrlq1o-MuiFormControl-root {
+.css-1nrlq1o-MuiFormControl-root,
+.css-13sljp9 {
   margin-left: -25px !important;
 }
