@@ -4,9 +4,12 @@ import {
   Checkbox,
   FilledInput,
   FormControl,
+  FormControlLabel,
   Grid,
   InputLabel,
   MenuItem,
+  Radio,
+  RadioGroup,
   Select,
   TextField,
 } from "@mui/material";
@@ -28,22 +31,31 @@ const SignUp = () => {
           <p className='signup-sub-title'>Sign up as</p>
           <form className='signup-form' action=''>
             <div className='form-group'>
-              <input
-                type='radio'
-                name='client-coder'
-                id='client'
-                value='Client'
-                onClick={() => setVisible(2)}
-              />
-              <label htmlFor='client'>Client</label>
-              <input
-                type='radio'
-                name='client-coder'
-                id='coder'
-                value='Coder'
-                onClick={() => setVisible(1)}
-              />
-              <label htmlFor='coader'>Coder</label>
+              <FormControl>
+                <RadioGroup
+                  row
+                  aria-labelledby='demo-row-radio-buttons-group-label'
+                  name='row-radio-buttons-group'
+                  defaultValue='coder'
+                >
+                  <FormControlLabel
+                    value='Client'
+                    control={<Radio />}
+                    label='Client'
+                    onClick={() => {
+                      setVisible(2);
+                    }}
+                  />
+                  <FormControlLabel
+                    value='coder'
+                    control={<Radio />}
+                    label='Coder'
+                    onClick={() => {
+                      setVisible(1);
+                    }}
+                  />
+                </RadioGroup>
+              </FormControl>
             </div>
             {visible === 1 && (
               <>
@@ -255,7 +267,9 @@ const SignUp = () => {
                 <a href='#'>Privacy Policy</a>
               </p>
             </div>
-            <input className='login-btn' type='submit' value='Sign Up' />
+            <Button fullWidth variant='contained'>
+              Sign up
+            </Button>
             <p className='account'>
               Already have an account ? <Link to='/'>Log In</Link>
             </p>

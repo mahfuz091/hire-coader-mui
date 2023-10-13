@@ -52,7 +52,7 @@ const Login = () => {
                 placeholder='Email'
               />
             </div>
-            <div className='form-group password '>
+            <div className='form-group mb-0 password '>
               <TextField
                 id='outlined-basic'
                 label='Password'

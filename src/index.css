@@ -249,8 +249,12 @@ input[type="number"] {
   /* 22.4px */
   opacity: 0.3;
 }
+.mb-0 {
+  margin-bottom: 0 !important;
+}
 
 .css-1fu7jd5-MuiButtonBase-root-MuiButton-root {
+  margin-top: 40px !important;
   padding: 12px 32px !important;
   border: none;
   border-radius: 4px;
