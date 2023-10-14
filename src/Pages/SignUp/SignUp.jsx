@@ -178,12 +178,7 @@ const SignUp = () => {
                           Type
                         </InputLabel>
                         <Select
-                          sx={{
-                            '& .Mui-focused .MuiOutlinedInput-root': {
-                              borderColor: 'red',
 
-                            },
-                          }}
                           labelId='demo-simple-select-label'
                           id='demo-simple-select'
                           label='Type'
