@@ -514,3 +514,7 @@ select option {
   border-color: #14a800 !important;
   border-width: 2px;
 }
+
+.css-frajsx-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #14a800 !important;
+}

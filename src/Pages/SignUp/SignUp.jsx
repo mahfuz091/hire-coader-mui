@@ -178,7 +178,13 @@ const SignUp = () => {
                           Type
                         </InputLabel>
                         <Select
-
+                          sx={{
+                            "& .MuiOutlinedInput-root.Mui-focused": {
+                              "& .MuiOutlinedInput-notchedOutline": {
+                                borderColor: "#14A800"
+                              }
+                            }
+                          }}
                           labelId='demo-simple-select-label'
                           id='demo-simple-select'
                           label='Type'
