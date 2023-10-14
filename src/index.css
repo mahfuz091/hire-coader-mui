@@ -16,6 +16,7 @@ a {
 .css-11lq3yg-MuiGrid-root {
   flex-direction: column !important;
 }
+
 @media (min-width: 992px) {
   .css-11lq3yg-MuiGrid-root {
     flex-direction: row !important;
@@ -89,6 +90,7 @@ a {
     margin-bottom: auto;
   }
 }
+
 @media (min-width: 1600px) {
   .login-left {
     padding-left: 280px;
@@ -144,11 +146,13 @@ a {
 .password {
   position: relative;
 }
+
 .password svg {
   position: absolute;
   top: 17px;
   right: 18px;
 }
+
 label {
   color: var(--nutral-colors-nutral-black, #000);
   text-align: right;
@@ -158,8 +162,10 @@ label {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 130%; /* 18.2px */
+  line-height: 130%;
+  /* 18.2px */
 }
+
 .Mui-focused {
   color: #000 !important;
 }
@@ -249,6 +255,7 @@ input[type="number"] {
   /* 22.4px */
   opacity: 0.3;
 }
+
 .mb-0 {
   margin-bottom: 0 !important;
 }
@@ -415,6 +422,7 @@ select option {
 }
 
 @media (min-width: 1200px) {
+
   .first-name,
   .last-name {
     width: 174px;
@@ -426,15 +434,18 @@ select option {
     margin-left: 10px;
   }
 }
+
 .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root {
   padding: 0 !important;
 }
+
 .check {
   display: flex;
   align-items: flex-start;
   margin-top: 16px;
   gap: 11px;
 }
+
 .check p {
   color: var(--nutral-colors-nutral-black, #000);
   font-feature-settings: "clig" off, "liga" off;
@@ -444,8 +455,10 @@ select option {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%; /* 24px */
+  line-height: 150%;
+  /* 24px */
 }
+
 .check p a {
   color: var(--primary-primary-color, #14a800);
   font-feature-settings: "clig" off, "liga" off;
@@ -456,6 +469,7 @@ select option {
   line-height: 150%;
   text-decoration-line: underline;
 }
+
 .upload {
   position: absolute;
   top: 10px;
@@ -472,7 +486,8 @@ select option {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 130%; /* 18.2px */
+  line-height: 130%;
+  /* 18.2px */
   text-transform: capitalize;
   display: flex;
   padding: 8px 24px;
@@ -488,7 +503,13 @@ select option {
 .css-1a5icme.Mui-checked {
   color: #14a800 !important;
 }
+
 .css-1nrlq1o-MuiFormControl-root,
 .css-13sljp9 {
   margin-left: -25px !important;
+}
+
+.css-zbpk9u.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #14a800 !important;
+  border-width: 2px;
 }
