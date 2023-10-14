@@ -225,7 +225,7 @@ const SignUp = () => {
                       }
                     }}
                     id='outlined-basic'
-                    label='Company Email*'
+                    label={<><span>Company Email</span><span className='red-color'>*</span></>}
                     variant='outlined'
                     placeholder='Company Email'
                   />

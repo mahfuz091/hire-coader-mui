@@ -518,3 +518,7 @@ select option {
 .Mui-focused .MuiOutlinedInput-notchedOutline {
   border-color: #14a800 !important;
 }
+
+.Mui-focused>.red-color {
+  color: red
+}
