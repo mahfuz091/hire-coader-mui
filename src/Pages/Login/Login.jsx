@@ -46,6 +46,13 @@ const Login = () => {
             </div>
             <div className='form-group'>
               <TextField
+                sx={{
+                  "& .MuiOutlinedInput-root.Mui-focused": {
+                    "& > fieldset": {
+                      borderColor: "#14A800"
+                    }
+                  }
+                }}
                 id='outlined-basic'
                 label='Email'
                 variant='outlined'
@@ -54,6 +61,13 @@ const Login = () => {
             </div>
             <div className='form-group mb-0 password '>
               <TextField
+                sx={{
+                  "& .MuiOutlinedInput-root.Mui-focused": {
+                    "& > fieldset": {
+                      borderColor: "#14A800"
+                    }
+                  }
+                }}
                 id='outlined-basic'
                 label='Password'
                 variant='outlined'

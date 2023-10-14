@@ -63,6 +63,13 @@ const SignUp = () => {
                   <Grid container rowGap={2}>
                     <Grid lg={6}>
                       <TextField
+                        sx={{
+                          "& .MuiOutlinedInput-root.Mui-focused": {
+                            "& > fieldset": {
+                              borderColor: "#14A800"
+                            }
+                          }
+                        }}
                         id='outlined-basic'
                         label='Name'
                         variant='outlined'
@@ -72,6 +79,13 @@ const SignUp = () => {
                     </Grid>
                     <Grid lg={6}>
                       <TextField
+                        sx={{
+                          "& .MuiOutlinedInput-root.Mui-focused": {
+                            "& > fieldset": {
+                              borderColor: "#14A800"
+                            }
+                          }
+                        }}
                         id='outlined-basic'
                         label='Last Name'
                         variant='outlined'
@@ -83,6 +97,13 @@ const SignUp = () => {
                 </div>
                 <div className='form-group'>
                   <TextField
+                    sx={{
+                      "& .MuiOutlinedInput-root.Mui-focused": {
+                        "& > fieldset": {
+                          borderColor: "#14A800"
+                        }
+                      }
+                    }}
                     id='outlined-basic'
                     label='Email'
                     variant='outlined'
@@ -91,6 +112,13 @@ const SignUp = () => {
                 </div>
                 <div className='form-group password '>
                   <TextField
+                    sx={{
+                      "& .MuiOutlinedInput-root.Mui-focused": {
+                        "& > fieldset": {
+                          borderColor: "#14A800"
+                        }
+                      }
+                    }}
                     id='outlined-basic'
                     label='Password'
                     variant='outlined'
@@ -130,6 +158,13 @@ const SignUp = () => {
                   <Grid container rowGap={2}>
                     <Grid lg={6}>
                       <TextField
+                        sx={{
+                          "& .MuiOutlinedInput-root.Mui-focused": {
+                            "& > fieldset": {
+                              borderColor: "#14A800"
+                            }
+                          }
+                        }}
                         id='outlined-basic'
                         label='Name'
                         variant='outlined'
@@ -143,6 +178,13 @@ const SignUp = () => {
                           Type
                         </InputLabel>
                         <Select
+                          sx={{
+                            "& .MuiOutlinedInput-root.Mui-focused": {
+                              "& > fieldset": {
+                                borderColor: "#14A800"
+                              }
+                            }
+                          }}
                           labelId='demo-simple-select-label'
                           id='demo-simple-select'
                           label='Type'
@@ -160,6 +202,13 @@ const SignUp = () => {
               <>
                 <div className='form-group '>
                   <TextField
+                    sx={{
+                      "& .MuiOutlinedInput-root.Mui-focused": {
+                        "& > fieldset": {
+                          borderColor: "#14A800"
+                        }
+                      }
+                    }}
                     id='outlined-basic'
                     label='Name'
                     variant='outlined'
@@ -168,6 +217,13 @@ const SignUp = () => {
                 </div>
                 <div className='form-group '>
                   <TextField
+                    sx={{
+                      "& .MuiOutlinedInput-root.Mui-focused": {
+                        "& > fieldset": {
+                          borderColor: "#14A800"
+                        }
+                      }
+                    }}
                     id='outlined-basic'
                     label='Company Email*'
                     variant='outlined'
@@ -176,6 +232,13 @@ const SignUp = () => {
                 </div>
                 <div className='form-group password '>
                   <TextField
+                    sx={{
+                      "& .MuiOutlinedInput-root.Mui-focused": {
+                        "& > fieldset": {
+                          borderColor: "#14A800"
+                        }
+                      }
+                    }}
                     id='outlined-basic'
                     label='Password'
                     variant='outlined'
@@ -213,6 +276,13 @@ const SignUp = () => {
                 </div>
                 <div className='form-group '>
                   <TextField
+                    sx={{
+                      "& .MuiOutlinedInput-root.Mui-focused": {
+                        "& > fieldset": {
+                          borderColor: "#14A800"
+                        }
+                      }
+                    }}
                     id='outlined-basic'
                     label='Phone*'
                     variant='outlined'
@@ -221,6 +291,13 @@ const SignUp = () => {
                 </div>
                 <div className='form-group '>
                   <TextField
+                    sx={{
+                      "& .MuiOutlinedInput-root.Mui-focused": {
+                        "& > fieldset": {
+                          borderColor: "#14A800"
+                        }
+                      }
+                    }}
                     id='outlined-basic'
                     label='Company Name*'
                     variant='outlined'
@@ -229,6 +306,13 @@ const SignUp = () => {
                 </div>
                 <div className='form-group '>
                   <TextField
+                    sx={{
+                      "& .MuiOutlinedInput-root.Mui-focused": {
+                        "& > fieldset": {
+                          borderColor: "#14A800"
+                        }
+                      }
+                    }}
                     id='outlined-basic'
                     label='Company Website*'
                     variant='outlined'
@@ -237,6 +321,13 @@ const SignUp = () => {
                 </div>
                 <div className='form-group '>
                   <TextField
+                    sx={{
+                      "& .MuiOutlinedInput-root.Mui-focused": {
+                        "& > fieldset": {
+                          borderColor: "#14A800"
+                        }
+                      }
+                    }}
                     id='outlined-basic'
                     label='LinkedIn URL*'
                     variant='outlined'
@@ -245,6 +336,13 @@ const SignUp = () => {
                 </div>
                 <div className='form-group password'>
                   <TextField
+                    sx={{
+                      "& .MuiOutlinedInput-root.Mui-focused": {
+                        "& > fieldset": {
+                          borderColor: "#14A800"
+                        }
+                      }
+                    }}
                     id='outlined-basic'
                     label='Logo'
                     variant='outlined'
