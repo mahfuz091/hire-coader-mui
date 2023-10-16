@@ -45,9 +45,17 @@ a {
 
 #outlined-basic {
   height: 56px;
-  width: 100%;
+
 
 }
+
+#outlined {
+  height: 100px;
+}
+
+
+
+
 
 .fullwidth {
   width: 100%;
@@ -447,6 +455,10 @@ select option {
   .last-name {
     width: 174px !important;
   }
+
+  .skill-width {
+    width: 165px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -541,7 +553,7 @@ select option {
 }
 
 .Mui-focused>.red-color {
-  color: red
+  color: red !important;
 }
 
 /* 
@@ -592,4 +604,46 @@ class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLa
 
 .introduce {
   height: 100px !important;
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.form-title {
+  color: var(--nutral-colors-nutral-black, #000);
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Headings/heading 4 */
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  /* 25.2px */
+}
+
+.form-title span {
+  color: var(--secondary-red, #F93232);
+}
+
+.character {
+  color: var(--nutral-colors-nutral-black, #000);
+  text-align: right;
+
+  /* Button text/Extra Small */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  /* 18.2px */
+  margin-top: 2px;
+}
+
+.skill-container .technology {
+  padding-right: 10px;
 }
