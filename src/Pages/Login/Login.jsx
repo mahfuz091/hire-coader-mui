@@ -13,6 +13,10 @@ import {
   TextField,
 } from "@mui/material";
 import { Link } from "react-router-dom";
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
 
 const Login = () => {
   return (
@@ -50,12 +54,10 @@ const Login = () => {
                 sx={{
                   "& .MuiOutlinedInput-root.Mui-focused": {
                     "& > fieldset": {
-                      borderColor: "#14A800"
-
-                    }
-                  }
+                      borderColor: "#14A800",
+                    },
+                  },
                 }}
-
                 id='outlined-basic'
                 label='Email'
                 variant='outlined'
@@ -63,13 +65,14 @@ const Login = () => {
               />
             </div>
             <div className='form-group mb-0 password '>
-              <TextField fullWidth
+              <TextField
+                fullWidth
                 sx={{
                   "& .MuiOutlinedInput-root.Mui-focused": {
                     "& > fieldset": {
-                      borderColor: "#14A800"
-                    }
-                  }
+                      borderColor: "#14A800",
+                    },
+                  },
                 }}
                 id='outlined-basic'
                 label='Password'
@@ -110,7 +113,7 @@ const Login = () => {
               Forgot Password
             </a>
 
-            <Button className="primary-btn" fullWidth variant='contained'>
+            <Button className='primary-btn' fullWidth variant='contained'>
               Log in
             </Button>
             <p className='account'>

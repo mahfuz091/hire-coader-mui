@@ -45,17 +45,11 @@ a {
 
 #outlined-basic {
   height: 56px;
-
-
 }
 
 #outlined {
   height: 100px;
 }
-
-
-
-
 
 .fullwidth {
   width: 100%;
@@ -121,7 +115,7 @@ a {
 .login-title,
 .signup-title {
   color: var(--Nutral-Black, #000);
-  font-family: Outfit;
+  font-family: "Roboto";
   font-size: 28px;
   font-style: normal;
   font-weight: 600;
@@ -133,7 +127,7 @@ a {
 .login-sub-title,
 .signup-sub-title {
   color: var(--Nutral-Black, #000);
-  font-family: Outfit;
+  font-family: "Roboto";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -171,7 +165,7 @@ label {
   text-align: right;
 
   /* Button text/Extra Small */
-  font-family: Inter;
+  font-family: "Roboto";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -192,12 +186,11 @@ label {
   color: var(--Nutral-Black, #000);
   opacity: 1;
   text-align: center;
-  font-family: Inter;
+  font-family: "Roboto";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
-
 }
 
 #coder {
@@ -239,7 +232,7 @@ input[type="number"] {
   color: var(--Nutral-Black, #000);
   text-align: right;
   /* 14px text */
-  font-family: Inter;
+  font-family: "Roboto";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -252,7 +245,7 @@ input[type="number"] {
 .password-label {
   color: var(--Nutral-Black, #000);
   /* field uper text */
-  font-family: Inter;
+  font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -264,7 +257,7 @@ input[type="number"] {
   color: var(--Nutral-Black, #000);
 
   /* 14px text */
-  font-family: Inter;
+  font-family: "Roboto";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -286,7 +279,7 @@ input[type="number"] {
   background: var(--Primary-color, #14a800) !important;
   color: var(--Nutral-White, #fff);
   /* button text */
-  font-family: Inter;
+  font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -301,7 +294,7 @@ input[type="number"] {
   margin-top: 16px;
   color: var(--Nutral-Black, #000);
 
-  font-family: Inter;
+  font-family: "Roboto";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -311,7 +304,7 @@ input[type="number"] {
 
 .account a {
   color: var(--Primary-color, #14a800);
-  font-family: Inter;
+  font-family: "Roboto";
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -335,7 +328,6 @@ input[type="number"] {
 
 @media (min-width: 992px) {
   .login-img {
-
     height: 100vh;
     width: 100%;
   }
@@ -363,7 +355,7 @@ input[type="number"] {
 
 .login-car-title {
   color: var(--Nutral-Black, #000);
-  font-family: Inter;
+  font-family: "Roboto";
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -375,7 +367,7 @@ input[type="number"] {
 
 .login-card-desig {
   color: var(--Nutral-Black, #000);
-  font-family: Inter;
+  font-family: "Roboto";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -390,7 +382,7 @@ input[type="number"] {
 
 .previous {
   color: var(--Nutral-Black, #000);
-  font-family: Inter;
+  font-family: "Roboto";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -426,7 +418,7 @@ select {
   color: rgba(0, 0, 0, 0.5);
 
   /* 14px text */
-  font-family: Inter;
+  font-family: "Roboto";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -450,7 +442,6 @@ select option {
 }
 
 @media (min-width: 1200px) {
-
   .first-name,
   .last-name {
     width: 174px !important;
@@ -464,7 +455,6 @@ select option {
 @media (min-width: 1200px) {
   .signup .form-group.gap .last-name {
     margin-left: 10px;
-
   }
 }
 
@@ -484,7 +474,7 @@ select option {
   font-feature-settings: "clig" off, "liga" off;
 
   /* Body text/body text */
-  font-family: Inter;
+  font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -495,7 +485,7 @@ select option {
 .check p a {
   color: var(--primary-primary-color, #14a800);
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -515,7 +505,7 @@ select option {
   text-transform: none !important;
 
   /* Button text/Extra Small */
-  font-family: Inter;
+  font-family: "Roboto";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -542,7 +532,6 @@ select option {
   margin-left: -25px !important;
 }
 
-
 .css-176gklw.Mui-focused .MuiOutlinedInput-notchedOutline {
   border-color: #14a800 !important;
   border-width: 2px;
@@ -552,7 +541,7 @@ select option {
   border-color: #14a800 !important;
 }
 
-.Mui-focused>.red-color {
+.Mui-focused > .red-color {
   color: red !important;
 }
 
@@ -573,15 +562,14 @@ class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLa
   margin: 0 auto !important;
 }
 
-
 /* Skill */
 
 .skill-title {
   color: var(--nutral-colors-nutral-black, #000);
-  font-feature-settings: 'clig' off, 'liga' off;
+  font-feature-settings: "clig" off, "liga" off;
 
   /* Headings/heading */
-  font-family: Outfit;
+  font-family: "Roboto";
   font-size: 28px;
   font-style: normal;
   font-weight: 600;
@@ -594,8 +582,6 @@ class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLa
 .form-skill {
   width: 536px;
   margin: 0 auto;
-
-
 }
 
 .skill-container {
@@ -615,10 +601,10 @@ class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLa
 
 .form-title {
   color: var(--nutral-colors-nutral-black, #000);
-  font-feature-settings: 'clig' off, 'liga' off;
+  font-feature-settings: "clig" off, "liga" off;
 
   /* Headings/heading 4 */
-  font-family: Inter;
+  font-family: "Roboto";
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -627,7 +613,7 @@ class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLa
 }
 
 .form-title span {
-  color: var(--secondary-red, #F93232);
+  color: var(--secondary-red, #f93232);
 }
 
 .character {
@@ -635,7 +621,7 @@ class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLa
   text-align: right;
 
   /* Button text/Extra Small */
-  font-family: Inter;
+  font-family: "Roboto";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
