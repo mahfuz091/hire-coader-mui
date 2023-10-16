@@ -23,7 +23,7 @@ const Login = () => {
           <h2 className='login-title'>Welcome Back</h2>
           <p className='login-sub-title'>Log in as</p>
           <form className='login-form' action=''>
-            <div className='form-group'>
+            <div className='form-group radio'>
               <FormControl>
                 <RadioGroup
                   row
@@ -46,13 +46,16 @@ const Login = () => {
             </div>
             <div className='form-group'>
               <TextField
+                fullWidth
                 sx={{
                   "& .MuiOutlinedInput-root.Mui-focused": {
                     "& > fieldset": {
                       borderColor: "#14A800"
+
                     }
                   }
                 }}
+
                 id='outlined-basic'
                 label='Email'
                 variant='outlined'
@@ -60,7 +63,7 @@ const Login = () => {
               />
             </div>
             <div className='form-group mb-0 password '>
-              <TextField
+              <TextField fullWidth
                 sx={{
                   "& .MuiOutlinedInput-root.Mui-focused": {
                     "& > fieldset": {
@@ -107,7 +110,7 @@ const Login = () => {
               Forgot Password
             </a>
 
-            <Button fullWidth variant='contained'>
+            <Button className="primary-btn" fullWidth variant='contained'>
               Log in
             </Button>
             <p className='account'>

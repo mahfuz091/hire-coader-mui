@@ -45,7 +45,12 @@ a {
 
 #outlined-basic {
   height: 56px;
-  width: 323px;
+  width: 100%;
+
+}
+
+.fullwidth {
+  width: 100%;
 }
 
 .login-form,
@@ -54,9 +59,9 @@ a {
 }
 
 @media (min-width: 1200px) {
-  #outlined-basic {
+  /* #outlined-basic {
     width: 368px;
-  }
+  } */
 
   .login-form,
   .signup-form {
@@ -170,7 +175,11 @@ label {
   color: #000 !important;
 }
 
-.form-group:nth-child(1) label {
+.type {
+  padding-left: 10px !important;
+}
+
+.form-group.radio label {
   margin-left: 10px;
   color: var(--Nutral-Black, #000);
   opacity: 1;
@@ -180,7 +189,7 @@ label {
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
-  /* 28.8px */
+
 }
 
 #coder {
@@ -311,9 +320,20 @@ input[type="number"] {
   background-repeat: no-repeat;
 }
 
+.signup-img {
+  height: 50vh;
+  width: 100%;
+}
+
 @media (min-width: 992px) {
   .login-img {
+
     height: 100vh;
+    width: 100%;
+  }
+
+  .signup-img {
+    height: 100%;
     width: 100%;
   }
 }
@@ -425,13 +445,14 @@ select option {
 
   .first-name,
   .last-name {
-    width: 174px;
+    width: 174px !important;
   }
 }
 
 @media (min-width: 1200px) {
-  .signup .form-group:nth-child(2) .last-name {
+  .signup .form-group.gap .last-name {
     margin-left: 10px;
+
   }
 }
 
@@ -521,4 +542,54 @@ select option {
 
 .Mui-focused>.red-color {
   color: red
+}
+
+/* 
+class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-p0rm37" */
+
+.css-1ald77x {
+  font-size: 2rem !important;
+}
+
+.primary-btn {
+  text-transform: capitalize !important;
+}
+
+.skill-mx-auto {
+  max-width: 746px;
+  width: 100%;
+  margin: 0 auto !important;
+}
+
+
+/* Skill */
+
+.skill-title {
+  color: var(--nutral-colors-nutral-black, #000);
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Headings/heading */
+  font-family: Outfit;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  /* 36.4px */
+  margin-top: 56px;
+  margin-bottom: 40px;
+}
+
+.form-skill {
+  width: 536px;
+  margin: 0 auto;
+
+
+}
+
+.skill-container {
+  padding: 0 105px;
+}
+
+.introduce {
+  height: 100px !important;
 }

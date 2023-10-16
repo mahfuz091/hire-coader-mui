@@ -19,10 +19,14 @@ import signup from "../../assets/Images/signup-bg.png";
 import logo from "../../assets/Images/logo.png";
 import { Link } from "react-router-dom";
 
+
 const SignUp = () => {
   const [visible, setVisible] = useState(1);
 
+
+
   return (
+
     <div className='signup'>
       <Grid container>
         <Grid sm={12} md={6} className='signup-left'>
@@ -30,7 +34,7 @@ const SignUp = () => {
           <h2 className='signup-title'>Welcome to HireCoder</h2>
           <p className='signup-sub-title'>Sign up as</p>
           <form className='signup-form' action=''>
-            <div className='form-group'>
+            <div className='form-group radio'>
               <FormControl>
                 <RadioGroup
                   row
@@ -59,10 +63,11 @@ const SignUp = () => {
             </div>
             {visible === 1 && (
               <>
-                <div className='form-group '>
-                  <Grid container rowGap={2}>
-                    <Grid lg={6}>
+                <div className='form-group gap'>
+                  <Grid container rowGap={2} >
+                    <Grid lg={6} className='fullwidth'>
                       <TextField
+                        fullWidth
                         sx={{
                           "& .MuiOutlinedInput-root.Mui-focused": {
                             "& > fieldset": {
@@ -74,11 +79,13 @@ const SignUp = () => {
                         label='Name'
                         variant='outlined'
                         placeholder='Name'
-                        className='first-name'
+                        className="first-name"
+
                       />
                     </Grid>
-                    <Grid lg={6}>
+                    <Grid sm={12} lg={6} className='fullwidth'>
                       <TextField
+                        fullWidth
                         sx={{
                           "& .MuiOutlinedInput-root.Mui-focused": {
                             "& > fieldset": {
@@ -90,13 +97,15 @@ const SignUp = () => {
                         label='Last Name'
                         variant='outlined'
                         placeholder='Last Name'
-                        className='last-name'
+                        className="last-name"
+
                       />
                     </Grid>
                   </Grid>
                 </div>
                 <div className='form-group'>
                   <TextField
+                    fullWidth
                     sx={{
                       "& .MuiOutlinedInput-root.Mui-focused": {
                         "& > fieldset": {
@@ -112,6 +121,7 @@ const SignUp = () => {
                 </div>
                 <div className='form-group password '>
                   <TextField
+                    fullWidth
                     sx={{
                       "& .MuiOutlinedInput-root.Mui-focused": {
                         "& > fieldset": {
@@ -154,10 +164,11 @@ const SignUp = () => {
                     </defs>
                   </svg>
                 </div>
-                <div className='form-group '>
+                <div className='form-group gap'>
                   <Grid container rowGap={2}>
-                    <Grid lg={6}>
+                    <Grid sm={12} lg={6} className="fullwidth">
                       <TextField
+                        fullWidth
                         sx={{
                           "& .MuiOutlinedInput-root.Mui-focused": {
                             "& > fieldset": {
@@ -166,15 +177,15 @@ const SignUp = () => {
                           }
                         }}
                         id='outlined-basic'
-                        label='Name'
+                        label='Phone'
                         variant='outlined'
-                        placeholder='Name'
+                        placeholder='Phone'
                         className='first-name'
                       />
                     </Grid>
-                    <Grid md={12} lg={6}>
+                    <Grid sm={12} lg={6} className="fullwidth">
                       <FormControl fullWidth>
-                        <InputLabel id='demo-simple-select-label'>
+                        <InputLabel id='demo-simple-select-label ' className='type'>
                           Type
                         </InputLabel>
                         <Select
@@ -183,11 +194,13 @@ const SignUp = () => {
                               "& .MuiOutlinedInput-notchedOutline": {
                                 borderColor: "#14A800"
                               }
+
                             }
                           }}
                           labelId='demo-simple-select-label'
                           id='demo-simple-select'
                           label='Type'
+                          className="last-name"
                         >
                           <MenuItem value={10}>Agency</MenuItem>
                           <MenuItem value={20}>Individual</MenuItem>
@@ -202,6 +215,7 @@ const SignUp = () => {
               <>
                 <div className='form-group '>
                   <TextField
+                    fullWidth
                     sx={{
                       "& .MuiOutlinedInput-root.Mui-focused": {
                         "& > fieldset": {
@@ -217,6 +231,7 @@ const SignUp = () => {
                 </div>
                 <div className='form-group '>
                   <TextField
+                    fullWidth
                     sx={{
                       "& .MuiOutlinedInput-root.Mui-focused": {
                         "& > fieldset": {
@@ -232,6 +247,7 @@ const SignUp = () => {
                 </div>
                 <div className='form-group password '>
                   <TextField
+                    fullWidth
                     sx={{
                       "& .MuiOutlinedInput-root.Mui-focused": {
                         "& > fieldset": {
@@ -276,6 +292,7 @@ const SignUp = () => {
                 </div>
                 <div className='form-group '>
                   <TextField
+                    fullWidth
                     sx={{
                       "& .MuiOutlinedInput-root.Mui-focused": {
                         "& > fieldset": {
@@ -291,6 +308,7 @@ const SignUp = () => {
                 </div>
                 <div className='form-group '>
                   <TextField
+                    fullWidth
                     sx={{
                       "& .MuiOutlinedInput-root.Mui-focused": {
                         "& > fieldset": {
@@ -306,6 +324,7 @@ const SignUp = () => {
                 </div>
                 <div className='form-group '>
                   <TextField
+                    fullWidth
                     sx={{
                       "& .MuiOutlinedInput-root.Mui-focused": {
                         "& > fieldset": {
@@ -321,6 +340,7 @@ const SignUp = () => {
                 </div>
                 <div className='form-group '>
                   <TextField
+                    fullWidth
                     sx={{
                       "& .MuiOutlinedInput-root.Mui-focused": {
                         "& > fieldset": {
@@ -336,6 +356,7 @@ const SignUp = () => {
                 </div>
                 <div className='form-group password'>
                   <TextField
+                    fullWidth
                     sx={{
                       "& .MuiOutlinedInput-root.Mui-focused": {
                         "& > fieldset": {
@@ -365,7 +386,7 @@ const SignUp = () => {
                 <a href='#'>Privacy Policy</a>
               </p>
             </div>
-            <Button fullWidth variant='contained'>
+            <Button className="primary-btn" fullWidth variant='contained'>
               Sign up
             </Button>
             <p className='account'>
@@ -374,7 +395,7 @@ const SignUp = () => {
           </form>
         </Grid>
         <Grid sm={12} md={6} className='signup-right'>
-          <img className='login-img' src={signup} alt='' />
+          <img className='signup-img' src={signup} alt='' />
         </Grid>
       </Grid>
     </div>
