@@ -21,13 +21,25 @@ a {
   padding-top: 20px;
 }
 
+@media (max-width: 991px) {
+  .login-left {
+    margin: auto;
+    padding-bottom: 25px;
+  }
+  .signup-left {
+    margin: auto;
+    padding-bottom: 25px;
+  }
+}
 
 @media (min-width: 992px) {
   .css-11lq3yg-MuiGrid-root {
     flex-direction: row !important;
   }
-
-
+  .signup-left {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .position-relative {
@@ -90,7 +102,6 @@ a {
 @media (min-width: 992px) {
   .login-left {
     margin: auto;
-
   }
 }
 
@@ -254,7 +265,7 @@ input[type="number"] {
 }
 
 .forgot-password {
-  color: var(--primary-primary-color, #14A800);
+  color: var(--primary-primary-color, #14a800);
   text-align: right;
   /* 14px text */
   font-family: "Roboto";
@@ -474,7 +485,6 @@ select option {
 }
 
 @media (min-width: 1200px) {
-
   .first-name,
   .last-name {
     width: 174px !important;
@@ -574,7 +584,7 @@ select option {
   border-color: #14a800 !important;
 }
 
-.Mui-focused>.red-color {
+.Mui-focused > .red-color {
   color: red !important;
 }
 
