@@ -302,7 +302,7 @@ const SignUp = () => {
                             <rect width='22' height='22' fill='white' />
                           </clipPath>
                         </defs>
-                      </svg></> : <> <img className="eye" src={eye} alt="" /></>
+                      </svg></> : <> <img className="eye" src={eyepng} alt="" /></>
                     }
                   </div>
 
