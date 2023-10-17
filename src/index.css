@@ -26,8 +26,8 @@ a {
     flex-direction: row !important;
   }
   .signup-left {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 40px !important;
+    padding-bottom: 120px;
   }
 }
 
@@ -83,7 +83,7 @@ a {
 .signup-left {
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 20px;
+  padding-top: 40px;
   margin: auto;
 }
 .login-left {
@@ -367,9 +367,9 @@ input[type="number"] {
   height: 50vh;
   width: 100%;
   object-fit: cover;
-  display: none;
 }
-.login-right {
+.login-right,
+.signup-right {
   display: none;
 }
 
@@ -383,9 +383,9 @@ input[type="number"] {
   .signup-img {
     height: 100%;
     width: 100%;
-    display: block;
   }
-  .login-right {
+  .login-right,
+  .signup-right {
     display: block;
   }
 }
