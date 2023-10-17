@@ -29,7 +29,7 @@ const Login = () => {
   return (
     <div className='login'>
       <Grid container>
-        <Grid sm={12} md={6} className='login-left'>
+        <Grid sm={12} lg={6} className='login-left'>
           <img className='logo' src={logo} alt='' />
           <h2 className='login-title'>Welcome Back</h2>
           <p className='login-sub-title'>Log in as</p>
@@ -153,7 +153,7 @@ const Login = () => {
             </p>
           </form>
         </Grid>
-        <Grid sm={12} md={6} className=' position-relative login-right'>
+        <Grid sm={12} lg={6} className=' position-relative login-right'>
           <div>
             <img className='login-img' src={loginbg} alt='' />
           </div>
