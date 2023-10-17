@@ -99,11 +99,11 @@ a {
   margin-bottom: auto;
 }
 
-/* @media (min-width: 992px) {
+@media (min-width: 992px) {
   .login-left {
     margin: auto;
   }
-} */
+}
 
 @media (min-width: 1200px) {
   .login-left {
