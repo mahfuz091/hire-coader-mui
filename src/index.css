@@ -358,26 +358,44 @@ input[type="number"] {
   /* height: 100vh; */
   height: 50vh;
   width: 100%;
-  background-image: url(./assets/Images/-2.png);
+  object-fit: cover;
+
+  /* background-image: url(./assets/Images/-2.png);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+}
+
+@media (min-width: 768px) {
+  .login-img {
+    height: 100vh;
+  }
 }
 
 .signup-img {
   height: 50vh;
   width: 100%;
+  object-fit: cover;
+  display: none;
+}
+.login-right {
+  display: none;
 }
 
 @media (min-width: 992px) {
   .login-img {
     height: 100vh;
     width: 100%;
+    display: block;
   }
 
   .signup-img {
     height: 100%;
     width: 100%;
+    display: block;
+  }
+  .login-right {
+    display: block;
   }
 }
 
