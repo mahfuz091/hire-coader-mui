@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import logo from "../../assets/Images/logo.png";
 import loginCardLogo from "../../assets/Images/login-card-logo.png";
 import eye from '../../assets/Images/eye.svg'
+import eyepng from '../../assets/Images/eye.png'
 import {
   Button,
   FormControl,
@@ -28,7 +29,7 @@ const Login = () => {
     <div className='login'>
       <Grid container>
         <Grid sm={12} md={6} className='login-left'>
-          <img src={logo} alt='' />
+          <img className="logo" src={logo} alt='' />
           <h2 className='login-title'>Welcome Back</h2>
           <p className='login-sub-title'>Log in as</p>
           <form className='login-form' action=''>
@@ -66,7 +67,7 @@ const Login = () => {
                 id='outlined-basic'
                 label='Email'
                 variant='outlined'
-                placeholder='Email'
+                placeholder='|Email'
               />
             </div>
             <div className='form-group mb-0 password '>
@@ -115,20 +116,25 @@ const Login = () => {
                         <rect width='22' height='22' fill='white' />
                       </clipPath>
                     </defs>
-                  </svg></> : <> <img className="eye" src={eye} alt="" /></>
+                  </svg></> : <> <img className="eye" src={eyepng} alt="" /></>
                 }
               </div>
 
             </div>
             <a className='forgot-password' href='#'>
-              Forgot Password
+              Forgot Password?
             </a>
 
-            <Button className='primary-btn' fullWidth variant='contained'>
+            <Button sx={{
+              backgroundColor: '#14A800',
+              marginTop: '40px',
+              padding: '14px 0',
+              "&:hover": { backgroundColor: "#14A840" }
+            }} className='primary-btn' fullWidth variant='contained'>
               Log in
             </Button>
             <p className='account'>
-              Don’t have an account? <Link to='/signup'>Sign Up</Link>
+              Don’t have an account? <Link className="login-signup" to='/signup'>Sign Up</Link>
             </p>
           </form>
         </Grid>

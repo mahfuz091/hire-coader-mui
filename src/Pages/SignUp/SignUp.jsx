@@ -14,6 +14,7 @@ import {
   TextField,
 } from "@mui/material";
 import eye from '../../assets/Images/eye.svg'
+import eyepng from '../../assets/Images/eye.png'
 import React, { useState } from "react";
 import signup from "../../assets/Images/signup-bg.png";
 import logo from "../../assets/Images/logo.png";
@@ -169,7 +170,7 @@ const SignUp = () => {
                             <rect width='22' height='22' fill='white' />
                           </clipPath>
                         </defs>
-                      </svg></> : <> <img className="eye" src={eye} alt="" /></>
+                      </svg></> : <> <img className="eye" src={eyepng} alt="" /></>
                     }
                   </div>
 
@@ -317,7 +318,7 @@ const SignUp = () => {
                       }
                     }}
                     id='outlined-basic'
-                    label='Phone*'
+                    label={<><span>Phone</span><span className='red-color'>*</span></>}
                     variant='outlined'
                     placeholder='Phone'
                   />
@@ -333,7 +334,7 @@ const SignUp = () => {
                       }
                     }}
                     id='outlined-basic'
-                    label='Company Name*'
+                    label={<><span>Company Name</span><span className='red-color'>*</span></>}
                     variant='outlined'
                     placeholder='Company Name'
                   />
@@ -349,7 +350,7 @@ const SignUp = () => {
                       }
                     }}
                     id='outlined-basic'
-                    label='Company Website*'
+                    label={<><span>Company Website</span><span className='red-color'>*</span></>}
                     variant='outlined'
                     placeholder='Company Website'
                   />
@@ -365,7 +366,7 @@ const SignUp = () => {
                       }
                     }}
                     id='outlined-basic'
-                    label='LinkedIn URL*'
+                    label={<><span>LinkedIn URL</span><span className='red-color'>*</span></>}
                     variant='outlined'
                     placeholder='LinkedIn URL'
                   />
@@ -386,7 +387,18 @@ const SignUp = () => {
                     placeholder='No File Chosen'
                   />
                   <div className='upload'>
-                    <Button variant='outlined' component='label'>
+                    <Button sx={{
+                      color: "#4D4D4D",
+                      backgroundColor: '#DDD',
+                      border: "1px solid #4D4D4D",
+
+                      textTransform: "capitalize",
+                      "&:hover": {
+                        backgroundColor: "#14A840",
+
+                        color: 'white'
+                      }
+                    }} variant='contained' component='label'>
                       Choose File
                       <input type='file' hidden />
                     </Button>
@@ -402,11 +414,16 @@ const SignUp = () => {
                 <a href='#'>Privacy Policy</a>
               </p>
             </div>
-            <Button className="primary-btn" fullWidth variant='contained'>
+            <Button sx={{
+              backgroundColor: '#14A800',
+              marginTop: '40px',
+              padding: '14px 0',
+              "&:hover": { backgroundColor: "#14A840" }
+            }} className="primary-btn" fullWidth variant='contained'>
               Sign up
             </Button>
             <p className='account'>
-              Already have an account ? <Link to='/'>Log In</Link>
+              Already have an account ? <Link className="signup-login" to='/'>Log In</Link>
             </p>
           </form>
         </Grid>
@@ -414,7 +431,7 @@ const SignUp = () => {
           <img className='signup-img' src={signup} alt='' />
         </Grid>
       </Grid>
-    </div>
+    </div >
   );
 };
 

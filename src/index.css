@@ -17,10 +17,17 @@ a {
   flex-direction: column !important;
 }
 
+.logo {
+  padding-top: 20px;
+}
+
+
 @media (min-width: 992px) {
   .css-11lq3yg-MuiGrid-root {
     flex-direction: row !important;
   }
+
+
 }
 
 .position-relative {
@@ -41,6 +48,7 @@ a {
 .login-left {
   padding-left: 30px;
   padding-right: 30px;
+  padding-top: 20px;
 }
 
 #outlined-basic {
@@ -74,6 +82,7 @@ a {
 .signup-left {
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 20px;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -81,6 +90,7 @@ a {
 @media (min-width: 992px) {
   .login-left {
     margin: auto;
+
   }
 }
 
@@ -88,11 +98,13 @@ a {
   .login-left {
     padding-left: 155px;
     padding-right: 156px;
+    padding-top: 0;
   }
 
   .signup-left {
     padding-left: 155px;
     padding-right: 156px;
+    padding-top: 0;
     margin-top: auto;
     margin-bottom: auto;
   }
@@ -162,14 +174,14 @@ a {
 }
 
 .eye {
-  width: 30px;
-  height: 30px;
+  width: 23px;
+  height: 23px;
   cursor: pointer;
 }
 
 .password .eye {
   position: absolute;
-  top: 14px;
+  top: 17px;
   right: 18px;
 }
 
@@ -242,7 +254,7 @@ input[type="number"] {
 }
 
 .forgot-password {
-  color: var(--Nutral-Black, #000);
+  color: var(--primary-primary-color, #14A800);
   text-align: right;
   /* 14px text */
   font-family: "Roboto";
@@ -252,6 +264,13 @@ input[type="number"] {
   line-height: 160%;
   /* 22.4px */
   float: right;
+  margin-top: 4px;
+}
+
+.signup-login:hover,
+.forgot-password:hover,
+.login-signup:hover {
+  text-decoration: underline;
 }
 
 .email-label,
@@ -642,4 +661,8 @@ class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLa
 
 .skill-container .technology {
   padding-right: 10px;
+}
+
+.text-right {
+  text-align: right;
 }

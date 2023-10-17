@@ -54,29 +54,25 @@ const Education = () => {
                             </Select>
                         </FormControl>
                     </div>
-                    <div className="form-group ">
-                        <FormControl fullWidth>
-                            <InputLabel id='demo-simple-select-label ' >
-                                Degree
-                            </InputLabel>
-                            <Select
-                                sx={{
-                                    "& .MuiOutlinedInput-root.Mui-focused": {
-                                        "& .MuiOutlinedInput-notchedOutline": {
-                                            borderColor: "#14A800"
-                                        }
+
+                    <div className='form-group'>
+                        <TextField fullWidth
+                            sx={{
+                                "& .MuiOutlinedInput-root.Mui-focused": {
+                                    "& > fieldset": {
+                                        borderColor: "#14A800"
 
                                     }
-                                }}
-                                labelId='demo-simple-select-label'
-                                id='demo-simple-select'
-                                label="Degree"
+                                }
+                            }}
 
-                            >
-                                <MenuItem value={10}>B.A.</MenuItem>
-                                <MenuItem value={20}>Individual</MenuItem>
-                            </Select>
-                        </FormControl>
+                            id='outlined-basic'
+                            label='Degree'
+                            variant='outlined'
+                            placeholder='B.A.'
+
+                        />
+
                     </div>
                     <div className='form-group'>
                         <TextField fullWidth
@@ -89,36 +85,78 @@ const Education = () => {
                                 }
                             }}
 
-                            id='outlined'
-                            label='Brief about your Work Experience*'
+                            id='outlined-basic'
+                            label='College'
                             variant='outlined'
-                            placeholder='Text Here'
-                            className='introduce'
+                            placeholder='Govt. College'
+
                         />
-                        <p className='character'>Max. 100 Character</p>
+                        <div className='text-right'>
+                            <Button
+                                sx={{
+                                    color: "#14A800",
+                                    fontSize: "16px",
+                                    marginTop: "8px",
+                                }
+                                }
+                                variant="text">Add More</Button>
+                        </div>
                     </div>
-                    <div className='form-group password'>
-                        <TextField
-                            fullWidth
+                    <div className='form-group'>
+                        <TextField fullWidth
                             sx={{
                                 "& .MuiOutlinedInput-root.Mui-focused": {
                                     "& > fieldset": {
                                         borderColor: "#14A800"
+
                                     }
                                 }
                             }}
+
                             id='outlined-basic'
-                            label='Upload Profile Picture*'
+                            label='Certifications'
                             variant='outlined'
-                            placeholder='No File Chosen'
+                            placeholder='Name of certificate'
+
                         />
-                        <div className='upload'>
-                            <Button variant='outlined' component='label'>
-                                Choose File
-                                <input type='file' hidden />
-                            </Button>
+
+                    </div>
+                    <div className='form-group'>
+                        <FormControl fullWidth>
+                            <InputLabel id='demo-simple-select-label ' >
+                                Completion Year
+                            </InputLabel>
+                            <Select
+                                sx={{
+                                    "& .MuiOutlinedInput-root.Mui-focused": {
+                                        "& .MuiOutlinedInput-notchedOutline": {
+                                            borderColor: "#14A800"
+                                        }
+
+                                    }
+                                }}
+                                labelId='demo-simple-select-label'
+                                id='demo-simple-select'
+                                label="Completion Year"
+
+
+                            >
+                                <MenuItem value={10}>Add year of completion</MenuItem>
+                                <MenuItem value={20}>Individual</MenuItem>
+                            </Select>
+                        </FormControl>
+                        <div className='text-right'>
+                            <Button
+                                sx={{
+                                    color: "#14A800",
+                                    fontSize: "16px",
+                                    marginTop: "8px",
+                                }
+                                }
+                                variant="text">Add More</Button>
                         </div>
                     </div>
+
                 </form>
             </div >
         </div >
