@@ -30,13 +30,7 @@ const SignUp = () => {
   return (
     <div className='signup'>
       <Grid container>
-        <Grid
-          sm={12}
-          md={6}
-          className={
-            visible == 2 ? "signup-left pt-40p" : "signup-left pb-106p"
-          }
-        >
+        <Grid sm={12} md={6} className='signup-left'>
           <img src={logo} alt='' />
           <h2 className='signup-title'>Welcome to HireCoder</h2>
           <p className='signup-sub-title'>Sign up as</p>
@@ -480,7 +474,13 @@ const SignUp = () => {
           </form>
         </Grid>
         <Grid sm={12} md={6} className='signup-right'>
-          <img className='signup-img' src={signup} alt='' />
+          <img
+            className={
+              visible == 2 ? "signup-img h-full" : "signup-img  h-screen"
+            }
+            src={signup}
+            alt=''
+          />
         </Grid>
       </Grid>
     </div>
