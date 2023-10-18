@@ -283,6 +283,12 @@ const SignUp = () => {
                   <div onClick={togglePass}>
                     {isPasswordVisible ? (
                       <>
+                        {" "}
+                        <img className='eye' src={eyepng} alt='' />
+                      </>
+                    ) : (
+                      <>
+                        {" "}
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
                           width='22'
@@ -312,11 +318,6 @@ const SignUp = () => {
                             </clipPath>
                           </defs>
                         </svg>
-                      </>
-                    ) : (
-                      <>
-                        {" "}
-                        <img className='eye' src={eyepng} alt='' />
                       </>
                     )}
                   </div>
