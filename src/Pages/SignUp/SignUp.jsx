@@ -13,13 +13,12 @@ import {
   Select,
   TextField,
 } from "@mui/material";
-import eye from '../../assets/Images/eye.svg'
-import eyepng from '../../assets/Images/eye.png'
+// import eye from "../../assets/Images/eye.svg";
+import eyepng from "../../assets/Images/eye.png";
 import React, { useState } from "react";
 import signup from "../../assets/Images/signup-bg.png";
 import logo from "../../assets/Images/logo.png";
 import { Link } from "react-router-dom";
-
 
 const SignUp = () => {
   const [visible, setVisible] = useState(1);
@@ -28,13 +27,14 @@ const SignUp = () => {
     setIsPasswordVisible(!isPasswordVisible);
   };
 
-
-
   return (
-
     <div className='signup'>
       <Grid container>
-        <Grid sm={12} md={6} className='signup-left'>
+        <Grid
+          sm={12}
+          md={6}
+          className={visible == 2 ? "signup-left pt-40p" : "signup-left"}
+        >
           <img src={logo} alt='' />
           <h2 className='signup-title'>Welcome to HireCoder</h2>
           <p className='signup-sub-title'>Sign up as</p>
@@ -69,23 +69,22 @@ const SignUp = () => {
             {visible === 1 && (
               <>
                 <div className='form-group gap'>
-                  <Grid container rowGap={2} >
+                  <Grid container rowGap={2}>
                     <Grid lg={6} className='fullwidth'>
                       <TextField
                         fullWidth
                         sx={{
                           "& .MuiOutlinedInput-root.Mui-focused": {
                             "& > fieldset": {
-                              borderColor: "#14A800"
-                            }
-                          }
+                              borderColor: "#14A800",
+                            },
+                          },
                         }}
                         id='outlined-basic'
                         label='Name'
                         variant='outlined'
                         placeholder='Name'
-                        className="first-name"
-
+                        className='first-name'
                       />
                     </Grid>
                     <Grid sm={12} lg={6} className='fullwidth'>
@@ -94,16 +93,15 @@ const SignUp = () => {
                         sx={{
                           "& .MuiOutlinedInput-root.Mui-focused": {
                             "& > fieldset": {
-                              borderColor: "#14A800"
-                            }
-                          }
+                              borderColor: "#14A800",
+                            },
+                          },
                         }}
                         id='outlined-basic'
                         label='Last Name'
                         variant='outlined'
                         placeholder='Last Name'
-                        className="last-name"
-
+                        className='last-name'
                       />
                     </Grid>
                   </Grid>
@@ -114,9 +112,9 @@ const SignUp = () => {
                     sx={{
                       "& .MuiOutlinedInput-root.Mui-focused": {
                         "& > fieldset": {
-                          borderColor: "#14A800"
-                        }
-                      }
+                          borderColor: "#14A800",
+                        },
+                      },
                     }}
                     id='outlined-basic'
                     label='Email'
@@ -141,51 +139,58 @@ const SignUp = () => {
                     placeholder='Password'
                   />
                   <div onClick={togglePass}>
-                    {
-                      isPasswordVisible ? <><svg
-                        xmlns='http://www.w3.org/2000/svg'
-                        width='22'
-                        height='22'
-                        viewBox='0 0 22 22'
-                        fill='none'
-                      >
-                        <g clipPath='url(#clip0_611_66)'>
-                          <path
-                            d='M9.07496 3.88702C9.70593 3.73932 10.3519 3.66549 11 3.66702C17.4166 3.66702 21.0833 11.0003 21.0833 11.0003C20.5269 12.0413 19.8633 13.0214 19.1033 13.9245M12.9433 12.9437C12.6915 13.2139 12.3879 13.4306 12.0506 13.5809C11.7133 13.7312 11.3491 13.812 10.9799 13.8185C10.6106 13.825 10.2439 13.7571 9.90144 13.6188C9.55901 13.4805 9.24795 13.2746 8.98682 13.0135C8.72568 12.7524 8.51982 12.4413 8.38151 12.0989C8.2432 11.7564 8.17528 11.3897 8.18179 11.0204C8.18831 10.6512 8.26913 10.287 8.41943 9.94971C8.56973 9.61238 8.78644 9.30878 9.05663 9.05702M16.445 16.4453C14.878 17.6398 12.97 18.3015 11 18.3337C4.58329 18.3337 0.916626 11.0003 0.916626 11.0003C2.05686 8.87542 3.63833 7.01891 5.55496 5.55535L16.445 16.4453Z'
-                            stroke='black'
-                            strokeWidth='1.5'
-                            strokeLinecap='round'
-                            strokeLinejoin='round'
-                          />
-                          <path
-                            d='M0.916626 0.916992L21.0833 21.0837'
-                            stroke='black'
-                            strokeWidth='1.5'
-                            strokeLinecap='round'
-                            strokeLinejoin='round'
-                          />
-                        </g>
-                        <defs>
-                          <clipPath id='clip0_611_66'>
-                            <rect width='22' height='22' fill='white' />
-                          </clipPath>
-                        </defs>
-                      </svg></> : <> <img className="eye" src={eyepng} alt="" /></>
-                    }
+                    {isPasswordVisible ? (
+                      <>
+                        {" "}
+                        <img className='eye' src={eyepng} alt='' />
+                      </>
+                    ) : (
+                      <>
+                        {" "}
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          width='22'
+                          height='22'
+                          viewBox='0 0 22 22'
+                          fill='none'
+                        >
+                          <g clipPath='url(#clip0_611_66)'>
+                            <path
+                              d='M9.07496 3.88702C9.70593 3.73932 10.3519 3.66549 11 3.66702C17.4166 3.66702 21.0833 11.0003 21.0833 11.0003C20.5269 12.0413 19.8633 13.0214 19.1033 13.9245M12.9433 12.9437C12.6915 13.2139 12.3879 13.4306 12.0506 13.5809C11.7133 13.7312 11.3491 13.812 10.9799 13.8185C10.6106 13.825 10.2439 13.7571 9.90144 13.6188C9.55901 13.4805 9.24795 13.2746 8.98682 13.0135C8.72568 12.7524 8.51982 12.4413 8.38151 12.0989C8.2432 11.7564 8.17528 11.3897 8.18179 11.0204C8.18831 10.6512 8.26913 10.287 8.41943 9.94971C8.56973 9.61238 8.78644 9.30878 9.05663 9.05702M16.445 16.4453C14.878 17.6398 12.97 18.3015 11 18.3337C4.58329 18.3337 0.916626 11.0003 0.916626 11.0003C2.05686 8.87542 3.63833 7.01891 5.55496 5.55535L16.445 16.4453Z'
+                              stroke='black'
+                              strokeWidth='1.5'
+                              strokeLinecap='round'
+                              strokeLinejoin='round'
+                            />
+                            <path
+                              d='M0.916626 0.916992L21.0833 21.0837'
+                              stroke='black'
+                              strokeWidth='1.5'
+                              strokeLinecap='round'
+                              strokeLinejoin='round'
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id='clip0_611_66'>
+                              <rect width='22' height='22' fill='white' />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </>
+                    )}
                   </div>
-
                 </div>
                 <div className='form-group gap'>
                   <Grid container rowGap={2}>
-                    <Grid sm={12} lg={6} className="fullwidth">
+                    <Grid sm={12} lg={6} className='fullwidth'>
                       <TextField
                         fullWidth
                         sx={{
                           "& .MuiOutlinedInput-root.Mui-focused": {
                             "& > fieldset": {
-                              borderColor: "#14A800"
-                            }
-                          }
+                              borderColor: "#14A800",
+                            },
+                          },
                         }}
                         id='outlined-basic'
                         label='Phone'
@@ -194,24 +199,26 @@ const SignUp = () => {
                         className='first-name'
                       />
                     </Grid>
-                    <Grid sm={12} lg={6} className="fullwidth">
+                    <Grid sm={12} lg={6} className='fullwidth'>
                       <FormControl fullWidth>
-                        <InputLabel id='demo-simple-select-label ' className='type'>
+                        <InputLabel
+                          id='demo-simple-select-label '
+                          className='type'
+                        >
                           Type
                         </InputLabel>
                         <Select
                           sx={{
                             "& .MuiOutlinedInput-root.Mui-focused": {
                               "& .MuiOutlinedInput-notchedOutline": {
-                                borderColor: "#14A800"
-                              }
-
-                            }
+                                borderColor: "#14A800",
+                              },
+                            },
                           }}
                           labelId='demo-simple-select-label'
                           id='demo-simple-select'
                           label='Type'
-                          className="last-name"
+                          className='last-name'
                         >
                           <MenuItem value={10}>Agency</MenuItem>
                           <MenuItem value={20}>Individual</MenuItem>
@@ -230,9 +237,9 @@ const SignUp = () => {
                     sx={{
                       "& .MuiOutlinedInput-root.Mui-focused": {
                         "& > fieldset": {
-                          borderColor: "#14A800"
-                        }
-                      }
+                          borderColor: "#14A800",
+                        },
+                      },
                     }}
                     id='outlined-basic'
                     label='Name'
@@ -246,12 +253,17 @@ const SignUp = () => {
                     sx={{
                       "& .MuiOutlinedInput-root.Mui-focused": {
                         "& > fieldset": {
-                          borderColor: "#14A800"
-                        }
-                      }
+                          borderColor: "#14A800",
+                        },
+                      },
                     }}
                     id='outlined-basic'
-                    label={<><span>Company Email</span><span className='red-color'>*</span></>}
+                    label={
+                      <>
+                        <span>Company Email</span>
+                        <span className='red-color'>*</span>
+                      </>
+                    }
                     variant='outlined'
                     placeholder='Company Email'
                   />
@@ -273,39 +285,45 @@ const SignUp = () => {
                     placeholder='Password'
                   />
                   <div onClick={togglePass}>
-                    {
-                      isPasswordVisible ? <><svg
-                        xmlns='http://www.w3.org/2000/svg'
-                        width='22'
-                        height='22'
-                        viewBox='0 0 22 22'
-                        fill='none'
-                      >
-                        <g clipPath='url(#clip0_611_66)'>
-                          <path
-                            d='M9.07496 3.88702C9.70593 3.73932 10.3519 3.66549 11 3.66702C17.4166 3.66702 21.0833 11.0003 21.0833 11.0003C20.5269 12.0413 19.8633 13.0214 19.1033 13.9245M12.9433 12.9437C12.6915 13.2139 12.3879 13.4306 12.0506 13.5809C11.7133 13.7312 11.3491 13.812 10.9799 13.8185C10.6106 13.825 10.2439 13.7571 9.90144 13.6188C9.55901 13.4805 9.24795 13.2746 8.98682 13.0135C8.72568 12.7524 8.51982 12.4413 8.38151 12.0989C8.2432 11.7564 8.17528 11.3897 8.18179 11.0204C8.18831 10.6512 8.26913 10.287 8.41943 9.94971C8.56973 9.61238 8.78644 9.30878 9.05663 9.05702M16.445 16.4453C14.878 17.6398 12.97 18.3015 11 18.3337C4.58329 18.3337 0.916626 11.0003 0.916626 11.0003C2.05686 8.87542 3.63833 7.01891 5.55496 5.55535L16.445 16.4453Z'
-                            stroke='black'
-                            strokeWidth='1.5'
-                            strokeLinecap='round'
-                            strokeLinejoin='round'
-                          />
-                          <path
-                            d='M0.916626 0.916992L21.0833 21.0837'
-                            stroke='black'
-                            strokeWidth='1.5'
-                            strokeLinecap='round'
-                            strokeLinejoin='round'
-                          />
-                        </g>
-                        <defs>
-                          <clipPath id='clip0_611_66'>
-                            <rect width='22' height='22' fill='white' />
-                          </clipPath>
-                        </defs>
-                      </svg></> : <> <img className="eye" src={eyepng} alt="" /></>
-                    }
+                    {isPasswordVisible ? (
+                      <>
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          width='22'
+                          height='22'
+                          viewBox='0 0 22 22'
+                          fill='none'
+                        >
+                          <g clipPath='url(#clip0_611_66)'>
+                            <path
+                              d='M9.07496 3.88702C9.70593 3.73932 10.3519 3.66549 11 3.66702C17.4166 3.66702 21.0833 11.0003 21.0833 11.0003C20.5269 12.0413 19.8633 13.0214 19.1033 13.9245M12.9433 12.9437C12.6915 13.2139 12.3879 13.4306 12.0506 13.5809C11.7133 13.7312 11.3491 13.812 10.9799 13.8185C10.6106 13.825 10.2439 13.7571 9.90144 13.6188C9.55901 13.4805 9.24795 13.2746 8.98682 13.0135C8.72568 12.7524 8.51982 12.4413 8.38151 12.0989C8.2432 11.7564 8.17528 11.3897 8.18179 11.0204C8.18831 10.6512 8.26913 10.287 8.41943 9.94971C8.56973 9.61238 8.78644 9.30878 9.05663 9.05702M16.445 16.4453C14.878 17.6398 12.97 18.3015 11 18.3337C4.58329 18.3337 0.916626 11.0003 0.916626 11.0003C2.05686 8.87542 3.63833 7.01891 5.55496 5.55535L16.445 16.4453Z'
+                              stroke='black'
+                              strokeWidth='1.5'
+                              strokeLinecap='round'
+                              strokeLinejoin='round'
+                            />
+                            <path
+                              d='M0.916626 0.916992L21.0833 21.0837'
+                              stroke='black'
+                              strokeWidth='1.5'
+                              strokeLinecap='round'
+                              strokeLinejoin='round'
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id='clip0_611_66'>
+                              <rect width='22' height='22' fill='white' />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </>
+                    ) : (
+                      <>
+                        {" "}
+                        <img className='eye' src={eyepng} alt='' />
+                      </>
+                    )}
                   </div>
-
                 </div>
                 <div className='form-group '>
                   <TextField
@@ -313,12 +331,17 @@ const SignUp = () => {
                     sx={{
                       "& .MuiOutlinedInput-root.Mui-focused": {
                         "& > fieldset": {
-                          borderColor: "#14A800"
-                        }
-                      }
+                          borderColor: "#14A800",
+                        },
+                      },
                     }}
                     id='outlined-basic'
-                    label={<><span>Phone</span><span className='red-color'>*</span></>}
+                    label={
+                      <>
+                        <span>Phone</span>
+                        <span className='red-color'>*</span>
+                      </>
+                    }
                     variant='outlined'
                     placeholder='Phone'
                   />
@@ -329,12 +352,17 @@ const SignUp = () => {
                     sx={{
                       "& .MuiOutlinedInput-root.Mui-focused": {
                         "& > fieldset": {
-                          borderColor: "#14A800"
-                        }
-                      }
+                          borderColor: "#14A800",
+                        },
+                      },
                     }}
                     id='outlined-basic'
-                    label={<><span>Company Name</span><span className='red-color'>*</span></>}
+                    label={
+                      <>
+                        <span>Company Name</span>
+                        <span className='red-color'>*</span>
+                      </>
+                    }
                     variant='outlined'
                     placeholder='Company Name'
                   />
@@ -345,12 +373,17 @@ const SignUp = () => {
                     sx={{
                       "& .MuiOutlinedInput-root.Mui-focused": {
                         "& > fieldset": {
-                          borderColor: "#14A800"
-                        }
-                      }
+                          borderColor: "#14A800",
+                        },
+                      },
                     }}
                     id='outlined-basic'
-                    label={<><span>Company Website</span><span className='red-color'>*</span></>}
+                    label={
+                      <>
+                        <span>Company Website</span>
+                        <span className='red-color'>*</span>
+                      </>
+                    }
                     variant='outlined'
                     placeholder='Company Website'
                   />
@@ -361,12 +394,17 @@ const SignUp = () => {
                     sx={{
                       "& .MuiOutlinedInput-root.Mui-focused": {
                         "& > fieldset": {
-                          borderColor: "#14A800"
-                        }
-                      }
+                          borderColor: "#14A800",
+                        },
+                      },
                     }}
                     id='outlined-basic'
-                    label={<><span>LinkedIn URL</span><span className='red-color'>*</span></>}
+                    label={
+                      <>
+                        <span>LinkedIn URL</span>
+                        <span className='red-color'>*</span>
+                      </>
+                    }
                     variant='outlined'
                     placeholder='LinkedIn URL'
                   />
@@ -377,9 +415,9 @@ const SignUp = () => {
                     sx={{
                       "& .MuiOutlinedInput-root.Mui-focused": {
                         "& > fieldset": {
-                          borderColor: "#14A800"
-                        }
-                      }
+                          borderColor: "#14A800",
+                        },
+                      },
                     }}
                     id='outlined-basic'
                     label='Logo'
@@ -387,18 +425,22 @@ const SignUp = () => {
                     placeholder='No File Chosen'
                   />
                   <div className='upload'>
-                    <Button sx={{
-                      color: "#4D4D4D",
-                      backgroundColor: '#DDD',
-                      border: "1px solid #4D4D4D",
+                    <Button
+                      sx={{
+                        color: "#4D4D4D",
+                        backgroundColor: "#DDD",
+                        border: "1px solid #4D4D4D",
 
-                      textTransform: "capitalize",
-                      "&:hover": {
-                        backgroundColor: "#14A840",
+                        textTransform: "capitalize",
+                        "&:hover": {
+                          backgroundColor: "#14A840",
 
-                        color: 'white'
-                      }
-                    }} variant='contained' component='label'>
+                          color: "white",
+                        },
+                      }}
+                      variant='contained'
+                      component='label'
+                    >
                       Choose File
                       <input type='file' hidden />
                     </Button>
@@ -414,16 +456,24 @@ const SignUp = () => {
                 <a href='#'>Privacy Policy</a>
               </p>
             </div>
-            <Button sx={{
-              backgroundColor: '#14A800',
-              marginTop: '40px',
-              padding: '14px 0',
-              "&:hover": { backgroundColor: "#14A840" }
-            }} className="primary-btn" fullWidth variant='contained'>
+            <Button
+              sx={{
+                backgroundColor: "#14A800",
+                marginTop: "40px",
+                padding: "14px 0",
+                "&:hover": { backgroundColor: "#14A840" },
+              }}
+              className='primary-btn'
+              fullWidth
+              variant='contained'
+            >
               Sign up
             </Button>
             <p className='account'>
-              Already have an account ? <Link className="signup-login" to='/'>Log In</Link>
+              Already have an account ?{" "}
+              <Link className='signup-login' to='/'>
+                Log In
+              </Link>
             </p>
           </form>
         </Grid>
@@ -431,7 +481,7 @@ const SignUp = () => {
           <img className='signup-img' src={signup} alt='' />
         </Grid>
       </Grid>
-    </div >
+    </div>
   );
 };
 

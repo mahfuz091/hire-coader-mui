@@ -26,8 +26,12 @@ a {
     flex-direction: row !important;
   }
   .signup-left {
+    /* padding-top: 40px !important; */
+    /* padding-bottom: 120px; */
+  }
+  .pt-40p {
     padding-top: 40px !important;
-    padding-bottom: 120px;
+    padding-bottom: 40px;
   }
 }
 
