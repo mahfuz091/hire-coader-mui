@@ -113,7 +113,7 @@ a {
   .signup-left {
     /* padding-left: 155px;
     padding-right: 156px; */
-    padding-top: 0;
+
     margin-top: auto;
     margin-bottom: auto;
   }
@@ -126,8 +126,8 @@ a {
   }
 
   .signup-left {
-    padding-left: 280px;
-    padding-right: 156px;
+    /* padding-left: 280px;
+    padding-right: 156px; */
     margin-top: auto;
     margin-bottom: auto;
   }
