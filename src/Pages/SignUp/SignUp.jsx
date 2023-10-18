@@ -33,7 +33,9 @@ const SignUp = () => {
         <Grid
           sm={12}
           md={6}
-          className={visible == 2 ? "signup-left pt-40p" : "signup-left"}
+          className={
+            visible == 2 ? "signup-left pt-40p" : "signup-left pb-106p"
+          }
         >
           <img src={logo} alt='' />
           <h2 className='signup-title'>Welcome to HireCoder</h2>
