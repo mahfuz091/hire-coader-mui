@@ -117,27 +117,26 @@ export default function HorizontalLinearStepper() {
           })}
         </Stepper>
         <Box sx={{ mt: 2 }}>{getStepContent(activeStep)}</Box>
-        <Box
-          className={activeStep === 0 ? "hidden" : "block"}
-          sx={{ display: "flex", flexDirection: "row", pt: 2 }}
-        >
-          <Button
-            sx={{
-              backgroundColor: "#14A800",
-              color: "#fff",
-              mt: "20px",
-              mb: "100px",
-              py: "14px",
-              px: "32px",
-              marginLeft: "620px",
-              "&:hover": { backgroundColor: "#14A840" },
-            }}
-            color='inherit'
-            onClick={handleBack}
-            disabled={activeStep === 0}
-          >
-            Back
-          </Button>
+        <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
+          <Box className={activeStep === 0 ? "hidden" : "block"}>
+            <Button
+              sx={{
+                backgroundColor: "#14A800",
+                color: "#fff",
+                mt: "20px",
+                mb: "100px",
+                py: "14px",
+                px: "32px",
+                marginLeft: "620px",
+                "&:hover": { backgroundColor: "#14A840" },
+              }}
+              color='inherit'
+              onClick={handleBack}
+              disabled={activeStep === 0}
+            >
+              Back
+            </Button>
+          </Box>
           <Box sx={{ flex: "1 1 auto" }} />
           <Button
             sx={{
