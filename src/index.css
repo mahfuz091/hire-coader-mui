@@ -21,6 +21,52 @@ a {
   padding-top: 20px;
 }
 
+/* stepper code start */
+
+.stepper-margin {
+  margin-top: 100px;
+}
+.hidden {
+  display: none;
+}
+.block {
+  display: block;
+}
+/* .css-ascpo7-MuiStepLabel-root{
+  display: grid!important;
+}
+.css-vnkopk-MuiStepLabel-iconContainer{
+  padding-right: 0!important;
+  display: flex;
+  justify-content: center;
+}
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active{
+  color: white!important;
+  border: 2px solid #14a800!important;
+  border-radius: 100%;
+}
+.css-1hv8oq8-MuiStepLabel-label.Mui-active{
+  color: #14a800!important;
+}
+.css-117w1su-MuiStepIcon-text{
+  fill: #000!important;
+  font-size: 16px!important;
+}
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root{
+  color: #EAEFF3!important;
+  border: 2px solid #E1E5E9!important;
+  border-radius: 100%;
+  width: 41px!important;
+  height: 41px!important;
+}
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed{
+  color: #14a800!important;
+}
+.css-z7uhs0-MuiStepConnector-line{
+  margin-top: 8px;
+} */
+/* stepper code end */
+
 @media (min-width: 992px) {
   .css-11lq3yg-MuiGrid-root {
     flex-direction: row !important;
@@ -642,12 +688,18 @@ class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLa
 }
 
 .form-skill {
-  width: 536px;
+  max-width: 536px;
+  width: 100%;
   margin: 0 auto;
 }
-
 .skill-container {
-  padding: 0 105px;
+  padding: 0 15px;
+}
+
+@media (min-width: 1200px) {
+  .skill-container {
+    padding: 0 105px;
+  }
 }
 
 .introduce {
