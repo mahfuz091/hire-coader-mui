@@ -52,8 +52,6 @@ const customStepperStyles = {
   "& .MuiStepLabel-label.Mui-active": {
     color: "#14a800",
   },
-
-
 };
 
 export default function HorizontalLinearStepper() {
@@ -132,60 +130,74 @@ export default function HorizontalLinearStepper() {
           })}
         </Stepper>
         <Box sx={{ mt: 2 }}>{getStepContent(activeStep)}</Box>
-        {activeStep === steps.length ?
-          null : <><Box
-            sx={{
-              display: "flex",
-              flexDirection: "row",
-              pt: 2,
-              maxWidth: "536px",
-              margin: "0 auto",
-              width: "100%",
-            }}
-          >
-            <Box className={activeStep === 0 ? "hidden" : "block"}>
+        {activeStep === steps.length ? null : (
+          <>
+            <Box
+              className={
+                activeStep === 3
+                  ? "mxw-1"
+                  : activeStep === 4
+                  ? "mxw-3"
+                  : "mxw-2"
+              }
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                pt: 2,
+
+                margin: "0 auto",
+                width: "100%",
+              }}
+            >
+              <Box className={activeStep === 0 ? "hidden" : "block"}>
+                <Button
+                  className={
+                    activeStep === 3
+                      ? "ml-2"
+                      : activeStep === 4
+                      ? "ml-4"
+                      : "ml-3"
+                  }
+                  sx={{
+                    border: "1px solid #6D6D6D",
+                    color: "#6D6D6D",
+                    mt: "20px",
+                    mb: "100px",
+                    py: "14px",
+                    px: "32px",
+
+                    "&:hover": {
+                      backgroundColor: "#14A840",
+                      color: "#FFF",
+                      border: "1px solid #14A840",
+                    },
+                  }}
+                  onClick={handleBack}
+                  disabled={activeStep === 0}
+                >
+                  Back
+                </Button>
+              </Box>
+              <Box sx={{ flex: "1 1 auto" }} />
+
               <Button
                 sx={{
-                  border: "1px solid #6D6D6D",
-                  color: "#6D6D6D",
+                  backgroundColor: "#14A800",
                   mt: "20px",
                   mb: "100px",
                   py: "14px",
                   px: "32px",
-                  marginLeft: "310px",
-
-                  "&:hover": {
-                    backgroundColor: "#14A840",
-                    color: "#FFF",
-                    border: "1px solid #14A840",
-
-                  },
+                  // marginRight: "300px",
+                  "&:hover": { backgroundColor: "#14A840" },
                 }}
-                color='inherit'
-                onClick={handleBack}
-                disabled={activeStep === 0}
+                variant='contained'
+                onClick={handleNext}
               >
-                Back
+                {activeStep === steps.length - 1 ? "Submit" : "Next"}
               </Button>
             </Box>
-            <Box sx={{ flex: "1 1 auto" }} />
-
-            <Button
-              sx={{
-                backgroundColor: "#14A800",
-                mt: "20px",
-                mb: "100px",
-                py: "14px",
-                px: "32px",
-                // marginRight: "300px",
-                "&:hover": { backgroundColor: "#14A840" },
-              }}
-              variant='contained'
-              onClick={handleNext}
-            >
-              {activeStep === steps.length - 1 ? "Submit" : "Next"}
-            </Button>
-          </Box></>}
+          </>
+        )}
       </Box>
     </Container>
   );

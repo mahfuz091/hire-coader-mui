@@ -13,8 +13,43 @@ a {
   text-decoration: none;
 }
 
-.css-11lq3yg-MuiGrid-root {
+/* .css-11lq3yg-MuiGrid-root {
   flex-direction: column !important;
+} */
+
+.mxw-1 {
+  max-width: 426px;
+  margin: 0 auto;
+  width: 100%;
+}
+.mxw-2 {
+  max-width: 536px;
+  margin: 0 auto;
+  width: 100%;
+}
+.mxw-3 {
+  max-width: 265px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.ml-2 {
+  margin-left: 120px !important;
+}
+
+.ml-3 {
+  margin-left: 140px !important;
+}
+.ml-4 {
+  margin-left: 20px !important;
+}
+@media (min-width: 600px) {
+  .ml-2 {
+    margin-left: 200px !important;
+  }
+  .ml-3 {
+    margin-left: 310px !important;
+  }
 }
 
 .logo {
@@ -564,7 +599,6 @@ select option {
 }
 
 @media (min-width: 1200px) {
-
   .first-name,
   .last-name {
     width: 174px !important;
@@ -672,7 +706,7 @@ select option {
   border-color: #14a800 !important;
 }
 
-.Mui-focused>.red-color {
+.Mui-focused > .red-color {
   color: red !important;
 }
 
@@ -805,8 +839,10 @@ class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLa
 }
 
 .add-pp {
-  color: var(--nutral-colors-nutral-black,
-      var(--components-chip-default-close-fill, #000));
+  color: var(
+    --nutral-colors-nutral-black,
+    var(--components-chip-default-close-fill, #000)
+  );
   font-feature-settings: "clig" off, "liga" off;
 
   /* Headings/heading 4(medium)18 */
@@ -820,12 +856,51 @@ class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLa
   margin-top: 16px;
 }
 
+.freepik {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.freepik h4 {
+  color: var(
+    --nutral-colors-nutral-black,
+    var(--components-chip-default-close-fill, #000)
+  );
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Button text/16 */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.15px;
+}
+.freepik p {
+  color: var(
+    --nutral-colors-nutral-black,
+    var(--components-chip-default-close-fill, #000)
+  );
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Body text/14 */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  opacity: 0.5;
+}
+
 /* verification */
 
 .verification-title {
-  color: var(--nutral-colors-nutral-black, var(--components-chip-default-close-fill, #000));
+  color: var(
+    --nutral-colors-nutral-black,
+    var(--components-chip-default-close-fill, #000)
+  );
   text-align: center;
-  font-feature-settings: 'clig' off, 'liga' off;
+  font-feature-settings: "clig" off, "liga" off;
 
   /* Headings/heading */
   font-family: Outfit;
@@ -839,8 +914,11 @@ class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLa
 }
 
 .verification-code {
-  color: var(--nutral-colors-nutral-black, var(--components-chip-default-close-fill, #000));
-  font-feature-settings: 'clig' off, 'liga' off;
+  color: var(
+    --nutral-colors-nutral-black,
+    var(--components-chip-default-close-fill, #000)
+  );
+  font-feature-settings: "clig" off, "liga" off;
   text-align: center;
 
   /* Headings/heading 4(medium)18 */
@@ -857,7 +935,6 @@ class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLa
   width: 52px;
   gap: 53px;
   padding-left: 14px;
-
 }
 
 .code label {
@@ -866,6 +943,7 @@ class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLa
 
 .code-grid {
   margin-bottom: 40px;
+  margin-left: 10px;
 }
 
 /* complete */
@@ -878,9 +956,12 @@ class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLa
 }
 
 .complete-container h2 {
-  color: var(--nutral-colors-nutral-black, var(--components-chip-default-close-fill, #000));
+  color: var(
+    --nutral-colors-nutral-black,
+    var(--components-chip-default-close-fill, #000)
+  );
   text-align: center;
-  font-feature-settings: 'clig' off, 'liga' off;
+  font-feature-settings: "clig" off, "liga" off;
 
   /* Headings/heading */
   font-family: Outfit;
@@ -893,9 +974,12 @@ class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLa
 }
 
 .complete-container p {
-  color: var(--nutral-colors-nutral-black, var(--components-chip-default-close-fill, #000));
+  color: var(
+    --nutral-colors-nutral-black,
+    var(--components-chip-default-close-fill, #000)
+  );
   text-align: center;
-  font-feature-settings: 'clig' off, 'liga' off;
+  font-feature-settings: "clig" off, "liga" off;
 
   /* Body text/16 */
   font-family: Inter;
@@ -908,9 +992,12 @@ class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLa
 }
 
 .complete-container .complete-login {
-  color: var(--nutral-colors-nutral-black, var(--components-chip-default-close-fill, #000));
+  color: var(
+    --nutral-colors-nutral-black,
+    var(--components-chip-default-close-fill, #000)
+  );
   text-align: center;
-  font-feature-settings: 'clig' off, 'liga' off;
+  font-feature-settings: "clig" off, "liga" off;
 
   /* Button text/16 */
   font-family: Inter;
@@ -923,8 +1010,11 @@ class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLa
 }
 
 .complete-container .complete-login-btn {
-  color: var(--primary-primary-color, var(--components-chip-default-close-fill, #14A800));
-  font-feature-settings: 'clig' off, 'liga' off;
+  color: var(
+    --primary-primary-color,
+    var(--components-chip-default-close-fill, #14a800)
+  );
+  font-feature-settings: "clig" off, "liga" off;
 
   /* Button text/16 */
   font-family: Inter;
@@ -935,15 +1025,30 @@ class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLa
   letter-spacing: 0.15px;
 }
 
-
 .logo-box {
   margin-top: 40px;
   display: flex;
-  width: 426px;
+  max-width: 426px;
   height: 146px;
   padding: 26px 99px 26.574px 99px;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-  border: 1px dashed var(--primary-primary-color, #14A800);
+  border: 1px dashed var(--primary-primary-color, #14a800);
+}
+
+/* .MuiSelect-icon {
+  background-image: url("./assets/Images/Down.svg") !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
+.MuiSelect-icon path {
+  display: none !important;
+}
+.MuiSelect-icon {
+  fill: #14a800 !important;
+  background-image: url("./assets/Images/Down.svg") !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 16px !important;
 }

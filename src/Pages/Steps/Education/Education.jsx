@@ -11,6 +11,7 @@ import {
   TextField,
 } from "@mui/material";
 import AddBoxOutlinedIcon from "@mui/icons-material/AddBoxOutlined";
+import freepik from "../../../assets/Images/freepik.png";
 
 const Education = () => {
   return (
@@ -182,6 +183,23 @@ const Education = () => {
               ></AddBoxOutlinedIcon>
               <p className='portfolio'>Upload Portfolio</p>
             </div>
+          </div>
+          <div
+            className='form-group'
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
+            <div className='freepik'>
+              <div>
+                <h4>https://www.freepik.com/</h4>
+                <p>Millions of Free.........</p>
+              </div>
+              <img src={freepik} alt='' />
+            </div>
+            <AddBoxOutlinedIcon sx={{ color: "#14A800" }}></AddBoxOutlinedIcon>
           </div>
         </form>
       </div>
