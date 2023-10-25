@@ -187,7 +187,7 @@ export default function HorizontalLinearStepper() {
                   mb: "100px",
                   py: "14px",
                   px: "32px",
-                  // marginRight: "300px",
+                  marginRight: { xs: "15px", sm: "0px" },
                   "&:hover": { backgroundColor: "#14A840" },
                 }}
                 variant='contained'
