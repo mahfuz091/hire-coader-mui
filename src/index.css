@@ -692,6 +692,11 @@ class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLa
   width: 100%;
   margin: 0 auto;
 }
+.form-digital {
+  max-width: 426px;
+  width: 100%;
+  margin: 0 auto;
+}
 .skill-container {
   padding: 0 15px;
 }
@@ -757,4 +762,39 @@ class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLa
   -webkit-box-flex: 0;
   flex-grow: 0;
   max-width: 100%;
+}
+
+/* Education */
+
+.resume,
+.portfolio {
+  color: #000;
+
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.upload-pp {
+  position: absolute;
+  bottom: 0px;
+  left: 55px;
+}
+.add-pp {
+  color: var(
+    --nutral-colors-nutral-black,
+    var(--components-chip-default-close-fill, #000)
+  );
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Headings/heading 4(medium)18 */
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 25.2px */
+  text-align: center;
+  margin-top: 16px;
 }

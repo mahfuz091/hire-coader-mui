@@ -6,6 +6,11 @@ import StepLabel from "@mui/material/StepLabel";
 import Button from "@mui/material/Button";
 import Skills from "../Steps/Skills/Skills";
 import { Container } from "@mui/material";
+import Education from "../Steps/Education/Education";
+import Address from "../Steps/Address/Address";
+import DigitalPresence from "../Steps/DigitalPresence/DigitalPresence";
+import Verification from "../Steps/Verification/Verification";
+import Complete from "../Steps/Complete/Complete";
 
 const customStepLabelStyles = {
   "& .MuiStepLabel-active": {
@@ -53,7 +58,13 @@ export default function HorizontalLinearStepper() {
   const [activeStep, setActiveStep] = React.useState(0);
   const [skipped, setSkipped] = React.useState(new Set());
 
-  const steps = ["Skills", "Education", "Address", "Digital Presence"];
+  const steps = [
+    "Skills",
+    "Education",
+    "Address",
+    "Digital Presence",
+    "Verification",
+  ];
 
   const isStepSkipped = (step) => {
     return skipped.has(step);
@@ -79,13 +90,15 @@ export default function HorizontalLinearStepper() {
       case 0:
         return <Skills />;
       case 1:
-        return <Skills />;
+        return <Education />;
       case 2:
-        return <Skills />;
+        return <Address />;
       case 3:
-        return <Skills />;
+        return <DigitalPresence />;
+      case 4:
+        return <Verification />;
       default:
-        return "Step not found";
+        return <Complete />;
     }
   };
 
@@ -117,7 +130,16 @@ export default function HorizontalLinearStepper() {
           })}
         </Stepper>
         <Box sx={{ mt: 2 }}>{getStepContent(activeStep)}</Box>
-        <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            pt: 2,
+            maxWidth: "536px",
+            margin: "0 auto",
+            width: "100%",
+          }}
+        >
           <Box className={activeStep === 0 ? "hidden" : "block"}>
             <Button
               sx={{
@@ -127,7 +149,7 @@ export default function HorizontalLinearStepper() {
                 mb: "100px",
                 py: "14px",
                 px: "32px",
-                marginLeft: "620px",
+                marginLeft: "310px",
                 "&:hover": { backgroundColor: "#14A840" },
               }}
               color='inherit'
@@ -138,6 +160,7 @@ export default function HorizontalLinearStepper() {
             </Button>
           </Box>
           <Box sx={{ flex: "1 1 auto" }} />
+
           <Button
             sx={{
               backgroundColor: "#14A800",
@@ -145,7 +168,7 @@ export default function HorizontalLinearStepper() {
               mb: "100px",
               py: "14px",
               px: "32px",
-              marginRight: "300px",
+              // marginRight: "300px",
               "&:hover": { backgroundColor: "#14A840" },
             }}
             variant='contained'
