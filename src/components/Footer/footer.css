@@ -1,9 +1,10 @@
 .footer {
   background: var(--Nutral-Black, #000);
+
 }
 
 .footer .page-wrapper {
-    width: 100%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,6 +43,7 @@
   .footer ul li a {
     font-size: 10px;
   }
+
   .footer p {
     font-size: 10px;
   }

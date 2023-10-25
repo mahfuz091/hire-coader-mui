@@ -6,7 +6,9 @@ const StepperLayout = () => {
   return (
     <>
       <Navbar></Navbar>
-      <Outlet></Outlet>
+      <div style={{ minHeight: "calc(100vh - 312px)" }}>
+        <Outlet ></Outlet>
+      </div>
       <Footer></Footer>
     </>
   );

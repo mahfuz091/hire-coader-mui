@@ -26,12 +26,15 @@ a {
 .stepper-margin {
   margin-top: 100px;
 }
+
 .hidden {
   display: none;
 }
+
 .block {
   display: block;
 }
+
 /* .css-ascpo7-MuiStepLabel-root{
   display: grid!important;
 }
@@ -71,14 +74,17 @@ a {
   .css-11lq3yg-MuiGrid-root {
     flex-direction: row !important;
   }
+
   .signup-left {
     /* padding-top: 40px !important; */
     /* padding-bottom: 120px; */
   }
+
   .pt-40p {
     padding-top: 60px !important;
     padding-bottom: 40px;
   }
+
   .pb-106p {
     padding-bottom: 88px;
   }
@@ -139,6 +145,7 @@ a {
   padding-top: 40px;
   margin: auto;
 }
+
 .login-left {
   margin: auto;
 }
@@ -421,6 +428,7 @@ input[type="number"] {
   width: 100%;
   object-fit: cover;
 }
+
 .login-right,
 .signup-right {
   display: none;
@@ -437,9 +445,11 @@ input[type="number"] {
     /* height: 100%; */
     width: 100%;
   }
+
   .h-screen {
     height: 100vh !important;
   }
+
   .h-full {
     height: 100% !important;
   }
@@ -554,6 +564,7 @@ select option {
 }
 
 @media (min-width: 1200px) {
+
   .first-name,
   .last-name {
     width: 174px !important;
@@ -561,6 +572,14 @@ select option {
 
   .skill-width {
     width: 165px;
+  }
+
+  .agency-field {
+    width: 253px !important;
+  }
+
+  .ml-15 {
+    margin-left: 15px !important;
   }
 }
 
@@ -653,7 +672,7 @@ select option {
   border-color: #14a800 !important;
 }
 
-.Mui-focused > .red-color {
+.Mui-focused>.red-color {
   color: red !important;
 }
 
@@ -692,11 +711,13 @@ class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLa
   width: 100%;
   margin: 0 auto;
 }
+
 .form-digital {
   max-width: 426px;
   width: 100%;
   margin: 0 auto;
 }
+
 .skill-container {
   padding: 0 15px;
 }
@@ -782,11 +803,10 @@ class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLa
   bottom: 0px;
   left: 55px;
 }
+
 .add-pp {
-  color: var(
-    --nutral-colors-nutral-black,
-    var(--components-chip-default-close-fill, #000)
-  );
+  color: var(--nutral-colors-nutral-black,
+      var(--components-chip-default-close-fill, #000));
   font-feature-settings: "clig" off, "liga" off;
 
   /* Headings/heading 4(medium)18 */
@@ -794,7 +814,136 @@ class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLa
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 140%; /* 25.2px */
+  line-height: 140%;
+  /* 25.2px */
   text-align: center;
   margin-top: 16px;
+}
+
+/* verification */
+
+.verification-title {
+  color: var(--nutral-colors-nutral-black, var(--components-chip-default-close-fill, #000));
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Headings/heading */
+  font-family: Outfit;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  /* 36.4px */
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.verification-code {
+  color: var(--nutral-colors-nutral-black, var(--components-chip-default-close-fill, #000));
+  font-feature-settings: 'clig' off, 'liga' off;
+  text-align: center;
+
+  /* Headings/heading 4(medium)18 */
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  /* 25.2px */
+  margin-bottom: 24px;
+}
+
+.code {
+  width: 52px;
+  gap: 53px;
+  padding-left: 14px;
+
+}
+
+.code label {
+  padding-left: 8px;
+}
+
+.code-grid {
+  margin-bottom: 40px;
+}
+
+/* complete */
+.complete-container {
+  max-width: 426px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 57px;
+  text-align: center;
+}
+
+.complete-container h2 {
+  color: var(--nutral-colors-nutral-black, var(--components-chip-default-close-fill, #000));
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Headings/heading */
+  font-family: Outfit;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  /* 36.4px */
+  margin-bottom: 16px;
+}
+
+.complete-container p {
+  color: var(--nutral-colors-nutral-black, var(--components-chip-default-close-fill, #000));
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Body text/16 */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 24px */
+  margin-bottom: 10px;
+}
+
+.complete-container .complete-login {
+  color: var(--nutral-colors-nutral-black, var(--components-chip-default-close-fill, #000));
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Button text/16 */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  /* 24px */
+  letter-spacing: 0.15px;
+}
+
+.complete-container .complete-login-btn {
+  color: var(--primary-primary-color, var(--components-chip-default-close-fill, #14A800));
+  font-feature-settings: 'clig' off, 'liga' off;
+
+  /* Button text/16 */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.15px;
+}
+
+
+.logo-box {
+  margin-top: 40px;
+  display: flex;
+  width: 426px;
+  height: 146px;
+  padding: 26px 99px 26.574px 99px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px dashed var(--primary-primary-color, #14A800);
 }

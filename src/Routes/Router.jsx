@@ -2,10 +2,13 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SignUp/SignUp";
-import Skills from "../Pages/Steps/Skills/Skills";
+
 import Education from "../Pages/Steps/Education/Education";
 import HorizontalLinearStepper from "../Pages/Stepper/HorizontalLinearStepper";
 import StepperLayout from "../Layout/StepperLayout";
+import Agency from "../Pages/Agency/Agency";
+import ClientStepperLaout from "../Layout/ClientStepperLaout";
+import ClientStepper from "../Pages/ClientStepper/ClientStepper";
 
 export const router = createBrowserRouter([
   {
@@ -22,8 +25,8 @@ export const router = createBrowserRouter([
       },
 
       {
-        path: "skills",
-        element: <Skills></Skills>,
+        path: "agency",
+        element: <Agency />,
       },
       {
         path: "education",
@@ -32,13 +35,24 @@ export const router = createBrowserRouter([
     ],
   },
   {
-    path: "stepper",
+    path: "coder-steps",
     element: <StepperLayout></StepperLayout>,
     children: [
       {
-        path: "/stepper",
+        path: "/coder-steps",
         element: <HorizontalLinearStepper></HorizontalLinearStepper>,
       },
     ],
   },
+  {
+    path: "client-steps",
+    element: <ClientStepperLaout></ClientStepperLaout>,
+    children: [
+      {
+        path: "/client-steps",
+        element: <ClientStepper></ClientStepper>,
+      },
+    ],
+
+  }
 ]);

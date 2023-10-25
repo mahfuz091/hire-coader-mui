@@ -223,6 +223,33 @@ const SignUp = () => {
                     </Grid>
                   </Grid>
                 </div>
+                <div className='check'>
+                  <Checkbox />{" "}
+                  <p>
+                    By Signing up you agree to our{" "}
+                    <a href='#'>Terms and Condition</a> and{" "}
+                    <a href='#'>Privacy Policy</a>
+                  </p>
+                </div>
+                <Link to='/coder-steps'><Button
+                  sx={{
+                    backgroundColor: "#14A800",
+                    marginTop: "40px",
+                    padding: "14px 0",
+                    "&:hover": { backgroundColor: "#14A840" },
+                  }}
+                  className='primary-btn'
+                  fullWidth
+                  variant='contained'
+                >
+                  Sign up
+                </Button></Link>
+                <p className='account'>
+                  Already have an account ?{" "}
+                  <Link className='signup-login' to='/'>
+                    Log In
+                  </Link>
+                </p>
               </>
             )}
             {visible === 2 && (
@@ -443,35 +470,36 @@ const SignUp = () => {
                     </Button>
                   </div>
                 </div>
+                <div className='check'>
+                  <Checkbox />{" "}
+                  <p>
+                    By Signing up you agree to our{" "}
+                    <a href='#'>Terms and Condition</a> and{" "}
+                    <a href='#'>Privacy Policy</a>
+                  </p>
+                </div>
+                <Link to='/client-steps'> <Button
+                  sx={{
+                    backgroundColor: "#14A800",
+                    marginTop: "40px",
+                    padding: "14px 0",
+                    "&:hover": { backgroundColor: "#14A840" },
+                  }}
+                  className='primary-btn'
+                  fullWidth
+                  variant='contained'
+                >
+                  Sign up
+                </Button></Link>
+                <p className='account'>
+                  Already have an account ?{" "}
+                  <Link className='signup-login' to='/'>
+                    Log In
+                  </Link>
+                </p>
               </>
             )}
-            <div className='check'>
-              <Checkbox />{" "}
-              <p>
-                By Signing up you agree to our{" "}
-                <a href='#'>Terms and Condition</a> and{" "}
-                <a href='#'>Privacy Policy</a>
-              </p>
-            </div>
-            <Button
-              sx={{
-                backgroundColor: "#14A800",
-                marginTop: "40px",
-                padding: "14px 0",
-                "&:hover": { backgroundColor: "#14A840" },
-              }}
-              className='primary-btn'
-              fullWidth
-              variant='contained'
-            >
-              Sign up
-            </Button>
-            <p className='account'>
-              Already have an account ?{" "}
-              <Link className='signup-login' to='/'>
-                Log In
-              </Link>
-            </p>
+
           </form>
         </Grid>
         <Grid sm={12} md={6} className='signup-right'>

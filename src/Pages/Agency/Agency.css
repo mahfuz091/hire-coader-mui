@@ -1,0 +1,19 @@
+.agency-container {
+    max-width: 536px;
+    width: 100%;
+    margin: 100px auto;
+    min-height: calc(100vh - 412px);
+}
+
+.agency-container h2 {
+    color: var(--nutral-colors-nutral-black, var(--components-chip-default-close-fill, #000));
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Headings/heading 4(medium)18 */
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    /* 25.2px */
+}
